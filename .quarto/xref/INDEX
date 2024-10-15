@@ -1,0 +1,17 @@
+{
+  "index.qmd": {
+    "index.html": "32ac9804"
+  },
+  "bootstrapping.qmd": {
+    "bootstrapping.html": "a0b42269"
+  },
+  "estimators.qmd": {
+    "estimators.html": "644fdef2"
+  },
+  "mc.qmd": {
+    "mc.html": "040ca102"
+  },
+  "randomizations.qmd": {
+    "randomizations.html": "e0bdd7a6"
+  }
+}
