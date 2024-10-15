@@ -11,5 +11,11 @@ format:
     css: styles.css
     toc: true
 
-editor: visual
+editor: source
+
+knitr:
+  opts_chunk: 
+    message: false
+    warnings: false
+    comment: "#>" 
 
