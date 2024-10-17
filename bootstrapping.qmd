@@ -11,8 +11,6 @@ The Boostrap Method is an approach that can construct the sampling distribution 
 #| code-fold: show
 
 library(tidyverse)
-library(palmerpenguins)
-
 theme_set(theme_bw())
 theme_update(axis.title = element_text(size = 24))
 
@@ -176,4 +174,4 @@ The bootstrap-based standard error is 0.71. This is different from the normal-ba
 quantile(boots_wt, probs = c(0.025, 0.975))
 ```
 
-The bootstrap-based 95% confidence interval is (-6.973, -4.164), which is slightly narrower than the mathematical-based 95% confidence interval: (-6.486, -4.203).
+The bootstrap-based 95% confidence interval is (-6.973, -4.164), which is slightly wider than the mathematical-based 95% confidence interval: (-6.486, -4.203).

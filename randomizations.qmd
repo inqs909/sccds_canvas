@@ -4,7 +4,7 @@ date-modified: "`r Sys.Date()`"
 ---
 
 
-## R Packages and Functions Used
+**R Packages and Functions Used**
 
 ```{r}
 #| code-fold: false
