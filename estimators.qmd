@@ -1,6 +1,6 @@
 ---
 title: "Statistical Estimators"
-date-modified: "`r Sys.Date()`"
+date-modified: "2024-09-28"
 ---
 
 ## R Packages Used

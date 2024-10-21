@@ -1,6 +1,6 @@
 ---
 title: "The Bootstrap Method"
-date-modified: "`r Sys.Date()`"
+date-modified: "2024-10-16"
 ---
 
 The Boostrap Method is an approach that can construct the sampling distribution of several estimators, not all estimators, without imposing a mathematical model on the data. The idea is that the sample $X_1, \ldots, X_n$ is generated from a distribution function called $F(\theta)$. If the sample is large enough, then the empirical distribution function $\hat F_n$ should begin to look like the true distribution function $F$. This implies that the sample contains all the information of $F$. Therefore, if we resample from our sample, with replacement, we are then sampling from our empirical distribution $\hat F_n$, which looks really close to the true distribution function $F$.

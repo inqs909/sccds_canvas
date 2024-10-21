@@ -4,6 +4,8 @@ date-modified: "`r Sys.Date()`"
 ---
 
 
+Randomization tests, also known as permutation tests, are used to test the null hypothesis is 
+
 **R Packages and Functions Used**
 
 ```{r}

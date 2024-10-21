@@ -13,5 +13,20 @@
   },
   "randomizations.qmd": {
     "randomizations.html": "e0bdd7a6"
+  },
+  "r_stats.qmd": {
+    "r_stats.html": "27897cce"
+  },
+  "r_data_manip.qmd": {
+    "r_data_manip.html": "fe38f192"
+  },
+  "r_basics.qmd": {
+    "r_basics.html": "656f3481"
+  },
+  "r_plot.qmd": {
+    "r_plot.html": "b3a2a1d5"
+  },
+  "rstudio.qmd": {
+    "rstudio.html": "a0c4c816"
   }
 }
