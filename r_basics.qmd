@@ -1,4 +1,10 @@
-# Basic R Programming
+---
+title: Basic R Programming
+format: html
+engine: knitr
+filters:
+  - webr
+---
 
 This chapter focuses on the basics of R programming. While most of your statistical analysis will be done with R functions, it is important to have an idea of what is going on. Additionally, we will cover other topics that you may or may not need to know. The topics we will cover are:
 
@@ -114,6 +120,17 @@ log(5)
 ```
 
 If you want to take the logarithm of a different base, you will use the `log()` function with `base` argument. We will discuss this more in @sec-r-functions.
+
+
+#### Practice
+
+Use the code console below to attempt other arithmetic operations such as $\ln(e^{23}) + \sin(2\pi) - 54/9*(3-8)^2$:
+
+
+```{webr-r}
+
+```
+
 
 ### Comparing Numbers {#sec-comparing-numbers}
 
