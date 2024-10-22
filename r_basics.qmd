@@ -554,14 +554,7 @@ Now create a new list called `list_two` and store `list_one` labeled as `list_on
                   array = first_array))
 ```
 
-## R Packages
 
-As stated before, R's functionality can be extended to do more things by installing R packages. An R package can be thought as extra software. This allows you to do more with R. To install an R package, you will need to use the `install.packages("NAME_OF_PACKAGE")` function. Once you install it, you do not need to install it again. To use the R package, use `library("NAME_OF_PACKAGE")`. This allows you to load the package in R. You will need to load the package every time you start R. For more information, please watch the video:
-
-```{=html}
-<iframe src="https://player.vimeo.com/video/203516241?h=819422ce1e&color=428bca" width="640" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/203516241">install Packages</a> from <a href="https://vimeo.com/rstudioinc">RStudio, Inc.</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-```
 ## Load Data
 
 In order to analyze data in R, we must load it into the R environment. This can be done in 2 ways, using the "Import Dataset" button in the "Environment" tab in RStudio or use R code.

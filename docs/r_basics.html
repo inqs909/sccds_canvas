@@ -401,7 +401,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"options":{"context":"interactive","editor-max-height":"","out-height":"","fig-height":5,"output":"true","fig-width":7,"label":"unnamed-chunk-1","out-width":"700px","autorun":"false","read-only":"false","results":"markup","warning":"true","comment":"","dpi":72,"editor-quick-suggestions":"false","classes":"","message":"true","editor-word-wrap":"true","editor-font-scale":"1","fig-cap":""},"code":""}];
+globalThis.qwebrCellDetails = [{"code":"","id":1,"options":{"message":"true","read-only":"false","fig-height":5,"autorun":"false","classes":"","editor-word-wrap":"true","out-width":"700px","editor-max-height":"","fig-cap":"","fig-width":7,"label":"unnamed-chunk-1","warning":"true","dpi":72,"editor-font-scale":"1","results":"markup","comment":"","editor-quick-suggestions":"false","out-height":"","context":"interactive","output":"true"}}];
 
 </script>
 <script type="module">
@@ -1726,7 +1726,6 @@ window.Quarto = {
   <li><a href="#sec-basic-data-frames" id="toc-sec-basic-data-frames" class="nav-link" data-scroll-target="#sec-basic-data-frames">Data Frames</a></li>
   <li><a href="#sec-basics-lists" id="toc-sec-basics-lists" class="nav-link" data-scroll-target="#sec-basics-lists">Lists</a></li>
   </ul></li>
-  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R Packages</a></li>
   <li><a href="#load-data" id="toc-load-data" class="nav-link" data-scroll-target="#load-data">Load Data</a>
   <ul class="collapse">
   <li><a href="#importing-data-via-rstudio" id="toc-importing-data-via-rstudio" class="nav-link" data-scroll-target="#importing-data-via-rstudio">Importing Data Via RStudio</a></li>
@@ -2397,7 +2396,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <div class="cell">
 <div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.time</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] "2024-10-22 00:14:49 PDT"</code></pre>
+<pre><code>#&gt; [1] "2024-10-22 10:49:00 PDT"</code></pre>
 </div>
 </div>
 <p>Now lets check if its of POSIX class, you can use the <code>class()</code> function to figure out which class is it. Try <code>class(Sys.time())</code>:</p>
@@ -2628,9 +2627,9 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(<span class="fu">rbinom</span>(<span class="dv">12</span>, <span class="dv">1</span>, .<span class="dv">5</span>), <span class="at">nrow =</span> <span class="dv">4</span>, <span class="at">ncol =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>#&gt;      [,1] [,2] [,3]
-#&gt; [1,]    1    0    1
-#&gt; [2,]    1    1    0
-#&gt; [3,]    0    1    0
+#&gt; [1,]    1    0    0
+#&gt; [2,]    1    0    1
+#&gt; [3,]    1    0    1
 #&gt; [4,]    1    0    0</code></pre>
 </div>
 </div>
@@ -2882,12 +2881,6 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </div>
 </div>
 </section>
-</section>
-<section id="r-packages" class="level2">
-<h2 class="anchored" data-anchor-id="r-packages">R Packages</h2>
-<p>As stated before, R’s functionality can be extended to do more things by installing R packages. An R package can be thought as extra software. This allows you to do more with R. To install an R package, you will need to use the <code>install.packages("NAME_OF_PACKAGE")</code> function. Once you install it, you do not need to install it again. To use the R package, use <code>library("NAME_OF_PACKAGE")</code>. This allows you to load the package in R. You will need to load the package every time you start R. For more information, please watch the video:</p>
-<iframe src="https://player.vimeo.com/video/203516241?h=819422ce1e&amp;color=428bca" width="640" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
-<p><a href="https://vimeo.com/203516241">install Packages</a> from <a href="https://vimeo.com/rstudioinc">RStudio, Inc.</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 </section>
 <section id="load-data" class="level2">
 <h2 class="anchored" data-anchor-id="load-data">Load Data</h2>
