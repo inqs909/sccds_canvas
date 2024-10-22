@@ -401,7 +401,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"","id":1,"options":{"message":"true","read-only":"false","fig-height":5,"autorun":"false","classes":"","editor-word-wrap":"true","out-width":"700px","editor-max-height":"","fig-cap":"","fig-width":7,"label":"unnamed-chunk-1","warning":"true","dpi":72,"editor-font-scale":"1","results":"markup","comment":"","editor-quick-suggestions":"false","out-height":"","context":"interactive","output":"true"}}];
+globalThis.qwebrCellDetails = [{"code":"","options":{"label":"unnamed-chunk-1","fig-height":5,"message":"true","editor-font-scale":"1","comment":"","context":"interactive","results":"markup","out-width":"700px","editor-quick-suggestions":"false","dpi":72,"editor-word-wrap":"true","output":"true","fig-width":7,"read-only":"false","fig-cap":"","editor-max-height":"","classes":"","autorun":"false","warning":"true","out-height":""},"id":1}];
 
 </script>
 <script type="module">
@@ -2396,7 +2396,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <div class="cell">
 <div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.time</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] "2024-10-22 10:49:00 PDT"</code></pre>
+<pre><code>#&gt; [1] "2024-10-22 11:02:30 PDT"</code></pre>
 </div>
 </div>
 <p>Now lets check if its of POSIX class, you can use the <code>class()</code> function to figure out which class is it. Try <code>class(Sys.time())</code>:</p>
@@ -2627,10 +2627,10 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(<span class="fu">rbinom</span>(<span class="dv">12</span>, <span class="dv">1</span>, .<span class="dv">5</span>), <span class="at">nrow =</span> <span class="dv">4</span>, <span class="at">ncol =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>#&gt;      [,1] [,2] [,3]
-#&gt; [1,]    1    0    0
-#&gt; [2,]    1    0    1
-#&gt; [3,]    1    0    1
-#&gt; [4,]    1    0    0</code></pre>
+#&gt; [1,]    0    1    0
+#&gt; [2,]    0    1    1
+#&gt; [3,]    1    1    1
+#&gt; [4,]    0    0    1</code></pre>
 </div>
 </div>
 <p>Your matrix may look different, but that is to be expected. Notice that some elements in a matrix are 0’s and some are 1’s. Each element in a matrix can hold any value.</p>

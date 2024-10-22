@@ -1,6 +1,15 @@
 # R
 
-R is a programming language that allows you 
+R is a programming language that allows users to compute statistics and graphics. It is based on [S](https://en.wikipedia.org/wiki/S_%28programming_language%29) and is a [GNU Project](https://www.gnu.org/). It has several built-in function to compute statistics with ease, as well as allowing users to build their own functions to be executed.
+
+## Installing R
+
+R can be installed from the [R-Project](https://www.r-project.org/) with these general instructions:
+
+1.    Go to R's [website](https://www.r-project.org/)
+2.    Select **download R** in the first paragraph
+3.    Choose **0-Cloud** to automatically choose the closes mirror.
+4.    Select and follow the instructions for the respective operating system
 
 
 # RStudio
