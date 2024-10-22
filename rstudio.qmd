@@ -4,7 +4,7 @@ RStudio is an integrated development environment ([IDE](https://en.wikipedia.org
 
 While RStudio has originally been used to program in R, it has been extended to program in python with the use of the [reticulate](https://rstudio.github.io/reticulate/) package.
 
-## Installing
+## Installation
 
 You can download and install the open-source (free) version of RStudio [here](https://posit.co/downloads/).
 

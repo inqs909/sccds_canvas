@@ -28,5 +28,11 @@
   },
   "rstudio.qmd": {
     "rstudio.html": "a0c4c816"
+  },
+  "r_adv.qmd": {
+    "r_adv.html": "8eaf8f30"
+  },
+  "r_projects.qmd": {
+    "r_projects.html": "96bea461"
   }
 }
