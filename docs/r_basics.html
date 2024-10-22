@@ -401,7 +401,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"","options":{"fig-height":5,"message":"true","output":"true","out-width":"700px","editor-font-scale":"1","context":"interactive","results":"markup","classes":"","editor-word-wrap":"true","fig-width":7,"out-height":"","read-only":"false","comment":"","label":"unnamed-chunk-1","editor-quick-suggestions":"false","warning":"true","autorun":"false","fig-cap":"","editor-max-height":"","dpi":72},"id":1}];
+globalThis.qwebrCellDetails = [{"id":1,"options":{"context":"interactive","editor-max-height":"","out-height":"","fig-height":5,"output":"true","fig-width":7,"label":"unnamed-chunk-1","out-width":"700px","autorun":"false","read-only":"false","results":"markup","warning":"true","comment":"","dpi":72,"editor-quick-suggestions":"false","classes":"","message":"true","editor-word-wrap":"true","editor-font-scale":"1","fig-cap":""},"code":""}];
 
 </script>
 <script type="module">
@@ -2040,7 +2040,8 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </header>
 
 
-<p>This chapter focuses on the basics of R programming. While most of your statistical analysis will be done with R functions, it is important to have an idea of what is going on. Additionally, we will cover other topics that you may or may not need to know. The topics we will cover are:</p>
+<p><em>Modifiend from <a href="https://www.inqs.info/stat_comp/">Statistical Computing</a></em></p>
+<p>This page focuses on the basics of R programming. While most of your statistical analysis will be done with R functions, it is important to have an idea of what is going on. Additionally, we will cover other topics that you may or may not need to know. The topics we will cover are:</p>
 <ol type="1">
 <li><p>Basic calculations in R</p></li>
 <li><p>Types of Data</p></li>
@@ -2396,7 +2397,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <div class="cell">
 <div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.time</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] "2024-10-21 23:22:04 PDT"</code></pre>
+<pre><code>#&gt; [1] "2024-10-22 00:14:49 PDT"</code></pre>
 </div>
 </div>
 <p>Now lets check if its of POSIX class, you can use the <code>class()</code> function to figure out which class is it. Try <code>class(Sys.time())</code>:</p>
@@ -2627,10 +2628,10 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(<span class="fu">rbinom</span>(<span class="dv">12</span>, <span class="dv">1</span>, .<span class="dv">5</span>), <span class="at">nrow =</span> <span class="dv">4</span>, <span class="at">ncol =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>#&gt;      [,1] [,2] [,3]
-#&gt; [1,]    0    1    0
+#&gt; [1,]    1    0    1
 #&gt; [2,]    1    1    0
-#&gt; [3,]    0    0    0
-#&gt; [4,]    1    0    1</code></pre>
+#&gt; [3,]    0    1    0
+#&gt; [4,]    1    0    0</code></pre>
 </div>
 </div>
 <p>Your matrix may look different, but that is to be expected. Notice that some elements in a matrix are 0’s and some are 1’s. Each element in a matrix can hold any value.</p>

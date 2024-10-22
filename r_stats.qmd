@@ -137,17 +137,3 @@ prop.table(table(mtcars$cyl, mtcars$carb),
 ```
 
 
-## Summarizing with Tidyverse
-
-```{r}
-library(magrittr)
-library(tidyverse)
-f <- function(x){
-  mtcars %>% split(~.$cyl) %>% map(~shapiro.test(.$mpg)) 
-  return(1)}
-g <- function(x){
-  mtcars %>% group_by(cyl) %>% nest() %>% mutate(shapiro = map(data, ~shapiro.test(.$mpg)))
-  return(1)}
-bench::mark(f(1),g(1))
-```
-

@@ -5,7 +5,7 @@ knitr:
     warning: false
 ---
 
-# Data Manipulation in R
+# Data Cleaning in R
 
 *Modifiend from [Statistical Computing](https://www.inqs.info/stat_comp/)*
 
@@ -71,7 +71,7 @@ read_csv("FILE_NAME_AND_LOCATION")
 
 Notice that the functions are virtually the same. 
 
-### For This Chapter
+### For This Page
 
 You will need to download and extract this zip [file](https://www.inqs.info/stat_comp/files/data.zip) to conduct the analysis in the chapter. The code below will load the data sets you need:
 
@@ -137,7 +137,7 @@ Summarizing data is great, but sometimes you may want to group data and obtain s
 data1 |> group_by(cat1)
 ```
 
-Great! You now have grouped data; however, this is not helpful. We can use this output and summarize the groups. All we need to do is pipe the output to the `summarise_all()`. Group `data1` by `cat1` and find the mean:
+Great! You now have grouped data; however, this is not helpful (note everything looks the same). We can use this output and summarize the groups. All we need to do is pipe the output to the `summarise_all()`. Group `data1` by `cat1` and find the mean:
 
 ```{r}
 data1 |> group_by(cat1) |> summarise_all(mean)

@@ -1,5 +1,7 @@
 # Advanced R Programming
 
+*Modifiend from [Statistical Computing](https://www.inqs.info/stat_comp/)*
+
 ## Control Flow
 
 Control Flow is the process for a computer to complete a task. There are statements that a computer will read and react when executing a tasks. This section briefly discusses the main components and statements of completing tasks in R.

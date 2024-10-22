@@ -155,7 +155,6 @@ window.Quarto = {
   <li><a href="#variability" id="toc-variability" class="nav-link" data-scroll-target="#variability">Variability</a></li>
   <li><a href="#associations" id="toc-associations" class="nav-link" data-scroll-target="#associations">Associations</a></li>
   </ul></li>
-  <li><a href="#summarizing-with-tidyverse" id="toc-summarizing-with-tidyverse" class="nav-link" data-scroll-target="#summarizing-with-tidyverse">Summarizing with Tidyverse</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -357,31 +356,10 @@ window.Quarto = {
 #&gt;   8 0.0000000 0.4000000 1.0000000 0.6000000 0.0000000 1.0000000</code></pre>
 </div>
 </div>
-</section>
-</section>
-</section>
-<section id="summarizing-with-tidyverse" class="level2">
-<h2 class="anchored" data-anchor-id="summarizing-with-tidyverse">Summarizing with Tidyverse</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(magrittr)</span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  mtcars <span class="sc">%&gt;%</span> <span class="fu">split</span>(<span class="sc">~</span>.<span class="sc">$</span>cyl) <span class="sc">%&gt;%</span> <span class="fu">map</span>(<span class="sc">~</span><span class="fu">shapiro.test</span>(.<span class="sc">$</span>mpg)) </span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="dv">1</span>)}</span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
-<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>  mtcars <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(cyl) <span class="sc">%&gt;%</span> <span class="fu">nest</span>() <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">shapiro =</span> <span class="fu">map</span>(data, <span class="sc">~</span><span class="fu">shapiro.test</span>(.<span class="sc">$</span>mpg)))</span>
-<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="dv">1</span>)}</span>
-<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>bench<span class="sc">::</span><span class="fu">mark</span>(<span class="fu">f</span>(<span class="dv">1</span>),<span class="fu">g</span>(<span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div data-pagedtable="false">
-  <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":["expression"],"name":[1],"type":["bnch_xpr"],"align":["right"]},{"label":["min"],"name":[2],"type":["bench_tm"],"align":["right"]},{"label":["median"],"name":[3],"type":["bench_tm"],"align":["right"]},{"label":["itr/sec"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["mem_alloc"],"name":[5],"type":["bnch_byt"],"align":["right"]},{"label":["gc/sec"],"name":[6],"type":["dbl"],"align":["right"]}],"data":[{"1":"<bnch_xpr>","2":"432.640896µs","3":"476.60002µs","4":"2008.4236","5":"146.515625KB","6":"43.16747"},{"1":"<bnch_xpr>","2":"8.141642ms","3":"8.63702ms","4":"114.6603","5":"3.267601MB","6":"42.24326"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-</div>
-</div>
-</div>
 
 
+</section>
+</section>
 </section>
 </section>
 

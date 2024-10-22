@@ -6,7 +6,9 @@ filters:
   - webr
 ---
 
-This chapter focuses on the basics of R programming. While most of your statistical analysis will be done with R functions, it is important to have an idea of what is going on. Additionally, we will cover other topics that you may or may not need to know. The topics we will cover are:
+*Modifiend from [Statistical Computing](https://www.inqs.info/stat_comp/)*
+
+This page focuses on the basics of R programming. While most of your statistical analysis will be done with R functions, it is important to have an idea of what is going on. Additionally, we will cover other topics that you may or may not need to know. The topics we will cover are:
 
 1.  Basic calculations in R
 
