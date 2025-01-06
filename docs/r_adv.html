@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -68,10 +68,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-659650fc26dc25888fc1474f317bb8ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -183,7 +183,7 @@ window.Quarto = {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
@@ -619,12 +619,12 @@ Important Concept
 <span id="cb66-11"><a href="#cb66-11" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb66-12"><a href="#cb66-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1] 0.4836095 0.4385340        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA
+<pre><code>#&gt;  [1] 2.8751731 1.2438909 1.3825958 0.7062181 0.9932120 1.2632065 0.1682321        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA
 #&gt; [22]        NA        NA        NA        NA        NA        NA        NA        NA        NA</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] -0.09856641</code></pre>
+<pre><code>#&gt; [1] -0.3867461</code></pre>
 </div>
 </div>
 <p>Notice that the vector does not get filled up all the way, that is because the loop will break once a negative number is simulated</p>
@@ -669,8 +669,8 @@ Important Note
 <span id="cb71-11"><a href="#cb71-11" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb71-12"><a href="#cb71-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1] 0.6706010 1.8579603 0.1273144        NA 0.1963137 0.9257204 0.5431283 0.7156563 0.5747690 2.0695405 1.6878057 0.6186489 3.1006017        NA        NA        NA        NA 1.1436319 1.6093213 0.6713051 1.2165665
-#&gt; [22] 1.2878447 0.1202885 1.1540846 2.1926315 1.4781020 0.5692702 1.6826507 1.8558675        NA</code></pre>
+<pre><code>#&gt;  [1] 1.59902002 0.95260548 1.20342746         NA 0.91925032         NA 2.20884193 2.25749371         NA         NA 0.32286143 0.02291256 2.21469457 1.12176151 0.98873486 1.82564237 1.36018774 1.58838148 1.05255483
+#&gt; [20] 0.23621041 0.83604067 0.34041854 2.27388482 0.55789941 0.10918816         NA 1.88776267 2.56482289 2.43726920 1.06996517</code></pre>
 </div>
 </div>
 <p>As you can see, the vector contains missing values, these were the iterations that a negative number was simulated.</p>
@@ -716,8 +716,8 @@ Important Concept
 </div>
 <div class="sourceCode cell-code" id="cb76"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1] 0.580752077 0.793259784 0.807599079 0.377911031 0.579090711 0.405657381 1.371121813 0.045961898 0.438374366 1.168086535 1.473455695 0.860211510 0.489575813 0.024756202 0.003087039 1.207095678 0.166366746 0.518837933
-#&gt; [19] 0.592362090 0.248240113 1.894668254 1.592058191 1.283645138 1.403922442 0.261828260 2.833898744 1.088771417 0.150903041 0.141013927 1.052943970</code></pre>
+<pre><code>#&gt;  [1] 0.006545374 1.070859788 1.236040445 0.705734262 0.567568146 1.873834214 0.436702997 0.033801675 0.841185398 1.136050854 0.788333567 1.540547667 1.026914188 0.940743428 0.001227606 0.398707943 0.114693660 0.169923768
+#&gt; [19] 1.454839949 0.792775194 0.479226642 0.363079739 0.972003472 0.735242886 0.250081446 0.186995804 0.407442788 0.053691209 0.140771980 0.220029020</code></pre>
 </div>
 </div>
 <p>Notice that we do not use an <code>else</code> statement. This is because we do not need R to complete a task if the condition fails.</p>
@@ -1404,8 +1404,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -1516,7 +1514,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
