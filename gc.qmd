@@ -1,0 +1,23 @@
+# Google Colab and Google Assignments
+
+Google Colaboratory (Colab) is an online service that provides both computing resources and a jupyter notebook environment in both R and Python. In this page, we will discuss how to create data science assignment with google colab and embedding it in Canvas. 
+
+## What is Google Colab?
+
+Google Colab is a free, cloud-based [Jupyter notebook](https://jupyter.org/) environment that allows you to execute R/python Python code through a web browser. It provides free access to RAM/CPUs/GPUs/TPUs to complete computational tasks. It is designed for data science, machine learning, and education that is integradted with Google Drive for saving and sharing notebooks.
+
+## Creating a Notebook in Google Colab
+
+The simplest way to create a notebook in Google Colab is to go to your school's Google Drive, click on the "New" button, click "More", and click "Google Colaboratory":
+
+![](img/gc_1.png)
+
+This will create a new tab 
+
+
+
+## Problems with Google Colab
+
+
+- Google Colab has implemented the use of Gemini AI into the notebooks. Instructors may find this problematic where they want students to learn how to code with out the help of AI.
+- Some students may have trouble accessing google assignments from their browsers. The solution is to have students access the assignment on a chromium-based browser.

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -68,10 +68,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-659650fc26dc25888fc1474f317bb8ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c75bcb89907db7808f0349b764a1a524.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -322,15 +322,21 @@ window.Quarto = {
 <div class="cell">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>toy_list<span class="sc">$</span>mtcars<span class="sc">$</span>mpg</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1] 21.0 21.0 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 17.8 16.4 17.3 15.2 10.4 10.4 14.7 32.4 30.4 33.9 21.5 15.5 15.2 13.3 19.2 27.3 26.0 30.4 15.8 19.7 15.0 21.4</code></pre>
+<pre><code>#&gt;  [1] 21.0 21.0 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 17.8 16.4 17.3 15.2 10.4
+#&gt; [16] 10.4 14.7 32.4 30.4 33.9 21.5 15.5 15.2 13.3 19.2 27.3 26.0 30.4 15.8 19.7
+#&gt; [31] 15.0 21.4</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>toy_list[[<span class="st">"mtcars"</span>]]<span class="sc">$</span>mpg</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1] 21.0 21.0 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 17.8 16.4 17.3 15.2 10.4 10.4 14.7 32.4 30.4 33.9 21.5 15.5 15.2 13.3 19.2 27.3 26.0 30.4 15.8 19.7 15.0 21.4</code></pre>
+<pre><code>#&gt;  [1] 21.0 21.0 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 17.8 16.4 17.3 15.2 10.4
+#&gt; [16] 10.4 14.7 32.4 30.4 33.9 21.5 15.5 15.2 13.3 19.2 27.3 26.0 30.4 15.8 19.7
+#&gt; [31] 15.0 21.4</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>toy_list<span class="sc">$</span>mtcars[,<span class="st">'mpg'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1] 21.0 21.0 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 17.8 16.4 17.3 15.2 10.4 10.4 14.7 32.4 30.4 33.9 21.5 15.5 15.2 13.3 19.2 27.3 26.0 30.4 15.8 19.7 15.0 21.4</code></pre>
+<pre><code>#&gt;  [1] 21.0 21.0 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 17.8 16.4 17.3 15.2 10.4
+#&gt; [16] 10.4 14.7 32.4 30.4 33.9 21.5 15.5 15.2 13.3 19.2 27.3 26.0 30.4 15.8 19.7
+#&gt; [31] 15.0 21.4</code></pre>
 </div>
 </div>
 </section>
@@ -383,7 +389,7 @@ Important Concept
 <span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">"Negative"</span>)</span>
 <span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] "Positive"</code></pre>
+<pre><code>#&gt; [1] "Negative"</code></pre>
 </div>
 </div>
 <p>Above, we add the <code>if</code> statement with condition <code>(x &lt; 0)</code> indicating if the number is negative. Lastly, if <code>x</code> is ever <span class="math inline">\(0\)</span>, we will want R to let us know it is <span class="math inline">\(0\)</span>. We can achieve this by adding one last <code>else</code> statement:</p>
@@ -532,24 +538,58 @@ Important Concept
 <div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(greekLetters)</span>
 <span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>greek_10 <span class="ot">&lt;-</span> <span class="fu">print_greeks</span>()[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;                  alpha                   beta                  gamma                  delta                epsilon                   zeta                    eta                  theta                   iota 
-#&gt;                    "α"                    "β"                    "γ"                    "δ"                    "ε"                    "ζ"                    "η"                    "θ"                    "ι" 
-#&gt;                  kappa                 lambda                     mu                     nu                     xi                omicron                     pi                    rho                  sigma 
-#&gt;                    "κ"                    "λ"                    "μ"                    "ν"                    "ξ"                    "ο"                    "π"                    "ρ"                    "σ" 
-#&gt;                    tau                upsilon                    phi                    chi                    psi                  omega                  Alpha                   Beta                  Gamma 
-#&gt;                    "τ"                    "υ"                    "φ"                    "χ"                    "ψ"                    "ω"                    "Α"                    "Β"                    "Γ" 
-#&gt;                  Delta                Epsilon                   Zeta                    Eta                  Theta                   Iota                  Kappa                 Lambda                     Mu 
-#&gt;                    "Δ"                    "Ε"                    "Ζ"                    "Η"                    "Θ"                    "Ι"                    "Κ"                    "Λ"                    "Μ" 
-#&gt;                     Nu                     Xi                Omicron                     Pi                    Rho                  Sigma                    Tau                Upsilon                    Phi 
-#&gt;                    "Ν"                    "Ξ"                    "Ο"                    "Π"                    "Ρ"                    "Σ"                    "Τ"                    "Υ"                    "Φ" 
-#&gt;                    Chi                    Psi                  Omega               infinity         leftrightarrow                 forall                  exist               notexist               emptyset 
-#&gt;                    "Χ"                    "Ψ"                    "Ω"                    "∞"                    "⇔"                    "∀"                    "∃"                    "∄"                    "∅" 
-#&gt;              elementof           notelementof           proportional    asymptoticallyEqual notasymptoticallyEqual            approxEqual            almostEqual                    leq                    geq 
-#&gt;                    "∈"                    "∉"                    "∝"                    "≃"                    "≄"                    "≅"                    "≈"                    "≤"                    "≥" 
-#&gt;               muchless            muchgreater              leftarrow             rightarrow                  equal               notEqual               integral         doubleintegral         tripleintegral 
-#&gt;                    "≪"                    "≫"                    "⇐"                    "⇒"                   "＝"                    "≠"                    "∫"                    "∬"                    "∭" 
-#&gt;             logicalAnd              logicalOr           intersection                  union 
-#&gt;                    "∧"                    "∨"                    "∩"                    "∪"</code></pre>
+<pre><code>#&gt;                  alpha                   beta                  gamma 
+#&gt;                    "α"                    "β"                    "γ" 
+#&gt;                  delta                epsilon                   zeta 
+#&gt;                    "δ"                    "ε"                    "ζ" 
+#&gt;                    eta                  theta                   iota 
+#&gt;                    "η"                    "θ"                    "ι" 
+#&gt;                  kappa                 lambda                     mu 
+#&gt;                    "κ"                    "λ"                    "μ" 
+#&gt;                     nu                     xi                omicron 
+#&gt;                    "ν"                    "ξ"                    "ο" 
+#&gt;                     pi                    rho                  sigma 
+#&gt;                    "π"                    "ρ"                    "σ" 
+#&gt;                    tau                upsilon                    phi 
+#&gt;                    "τ"                    "υ"                    "φ" 
+#&gt;                    chi                    psi                  omega 
+#&gt;                    "χ"                    "ψ"                    "ω" 
+#&gt;                  Alpha                   Beta                  Gamma 
+#&gt;                    "Α"                    "Β"                    "Γ" 
+#&gt;                  Delta                Epsilon                   Zeta 
+#&gt;                    "Δ"                    "Ε"                    "Ζ" 
+#&gt;                    Eta                  Theta                   Iota 
+#&gt;                    "Η"                    "Θ"                    "Ι" 
+#&gt;                  Kappa                 Lambda                     Mu 
+#&gt;                    "Κ"                    "Λ"                    "Μ" 
+#&gt;                     Nu                     Xi                Omicron 
+#&gt;                    "Ν"                    "Ξ"                    "Ο" 
+#&gt;                     Pi                    Rho                  Sigma 
+#&gt;                    "Π"                    "Ρ"                    "Σ" 
+#&gt;                    Tau                Upsilon                    Phi 
+#&gt;                    "Τ"                    "Υ"                    "Φ" 
+#&gt;                    Chi                    Psi                  Omega 
+#&gt;                    "Χ"                    "Ψ"                    "Ω" 
+#&gt;               infinity         leftrightarrow                 forall 
+#&gt;                    "∞"                    "⇔"                    "∀" 
+#&gt;                  exist               notexist               emptyset 
+#&gt;                    "∃"                    "∄"                    "∅" 
+#&gt;              elementof           notelementof           proportional 
+#&gt;                    "∈"                    "∉"                    "∝" 
+#&gt;    asymptoticallyEqual notasymptoticallyEqual            approxEqual 
+#&gt;                    "≃"                    "≄"                    "≅" 
+#&gt;            almostEqual                    leq                    geq 
+#&gt;                    "≈"                    "≤"                    "≥" 
+#&gt;               muchless            muchgreater              leftarrow 
+#&gt;                    "≪"                    "≫"                    "⇐" 
+#&gt;             rightarrow                  equal               notEqual 
+#&gt;                    "⇒"                   "＝"                    "≠" 
+#&gt;               integral         doubleintegral         tripleintegral 
+#&gt;                    "∫"                    "∬"                    "∭" 
+#&gt;             logicalAnd              logicalOr           intersection 
+#&gt;                    "∧"                    "∨"                    "∩" 
+#&gt;                  union 
+#&gt;                    "∪"</code></pre>
 </div>
 </div>
 <p>For this example, we want R to print “a” and “<span class="math inline">\(\alpha\)</span>” together as demonstrated below<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>:</p>
@@ -619,12 +659,14 @@ Important Concept
 <span id="cb66-11"><a href="#cb66-11" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb66-12"><a href="#cb66-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1] 2.8751731 1.2438909 1.3825958 0.7062181 0.9932120 1.2632065 0.1682321        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA        NA
-#&gt; [22]        NA        NA        NA        NA        NA        NA        NA        NA        NA</code></pre>
+<pre><code>#&gt;  [1] 1.856430 1.009691 2.330322 1.109874 2.017652       NA       NA       NA
+#&gt;  [9]       NA       NA       NA       NA       NA       NA       NA       NA
+#&gt; [17]       NA       NA       NA       NA       NA       NA       NA       NA
+#&gt; [25]       NA       NA       NA       NA       NA       NA</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] -0.3867461</code></pre>
+<pre><code>#&gt; [1] -0.2393827</code></pre>
 </div>
 </div>
 <p>Notice that the vector does not get filled up all the way, that is because the loop will break once a negative number is simulated</p>
@@ -669,8 +711,11 @@ Important Note
 <span id="cb71-11"><a href="#cb71-11" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb71-12"><a href="#cb71-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1] 1.59902002 0.95260548 1.20342746         NA 0.91925032         NA 2.20884193 2.25749371         NA         NA 0.32286143 0.02291256 2.21469457 1.12176151 0.98873486 1.82564237 1.36018774 1.58838148 1.05255483
-#&gt; [20] 0.23621041 0.83604067 0.34041854 2.27388482 0.55789941 0.10918816         NA 1.88776267 2.56482289 2.43726920 1.06996517</code></pre>
+<pre><code>#&gt;  [1] 1.9007596 1.6980570 0.2650156        NA 0.1389606 3.1478625 1.1636110
+#&gt;  [8]        NA 0.6644255 1.1328432 1.1032849 1.8214728 1.4475022 1.1009357
+#&gt; [15] 1.1397969        NA 1.5095491 2.3330072 0.5667232 1.3703313 0.8003951
+#&gt; [22] 2.6153090 1.1107568 1.1087639 0.2859298 0.9135136 0.3612305 2.1918165
+#&gt; [29] 1.0839454 0.9329288</code></pre>
 </div>
 </div>
 <p>As you can see, the vector contains missing values, these were the iterations that a negative number was simulated.</p>
@@ -716,8 +761,11 @@ Important Concept
 </div>
 <div class="sourceCode cell-code" id="cb76"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1] 0.006545374 1.070859788 1.236040445 0.705734262 0.567568146 1.873834214 0.436702997 0.033801675 0.841185398 1.136050854 0.788333567 1.540547667 1.026914188 0.940743428 0.001227606 0.398707943 0.114693660 0.169923768
-#&gt; [19] 1.454839949 0.792775194 0.479226642 0.363079739 0.972003472 0.735242886 0.250081446 0.186995804 0.407442788 0.053691209 0.140771980 0.220029020</code></pre>
+<pre><code>#&gt;  [1] 0.44962218 1.32574289 0.42461772 0.16495543 0.56000919 0.47671503
+#&gt;  [7] 1.08521884 0.63322453 0.36353701 1.02807051 0.09565741 2.57950704
+#&gt; [13] 0.78236694 1.00655078 1.35753657 0.19910821 0.42802014 0.17287882
+#&gt; [19] 1.00726520 0.67429689 1.52891621 1.80778881 0.79699842 0.86523759
+#&gt; [25] 0.80553572 0.74394071 0.69183337 0.87815201 0.24491963 2.59054624</code></pre>
 </div>
 </div>
 <p>Notice that we do not use an <code>else</code> statement. This is because we do not need R to complete a task if the condition fails.</p>
@@ -982,25 +1030,33 @@ Important Concept
 <div class="sourceCode cell-code" id="cb108"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">15</span></span>
 <span id="cb108-2"><a href="#cb108-2" aria-hidden="true" tabindex="-1"></a>x<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> <span class="fu">log</span>(x) <span class="sc">+</span> <span class="fu">exp</span>(x)<span class="sc">/</span><span class="fu">factorial</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1]   3.718282   8.387675  13.446202  19.661217  27.846214  38.352077  51.163496  66.153374  83.219555 102.308655 123.399395 146.485246 171.565020 198.639071 227.708053</code></pre>
+<pre><code>#&gt;  [1]   3.718282   8.387675  13.446202  19.661217  27.846214  38.352077
+#&gt;  [7]  51.163496  66.153374  83.219555 102.308655 123.399395 146.485246
+#&gt; [13] 171.565020 198.639071 227.708053</code></pre>
 </div>
 </div>
 <p>Let’s say we could not do that, we need to evaluate the function for each value of <code>x</code>. We can use the <code>sapply()</code> function with an anonymous function:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb110"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(x, <span class="cf">function</span>(x) x<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> <span class="fu">log</span>(x) <span class="sc">+</span> <span class="fu">exp</span>(x) <span class="sc">/</span> <span class="fu">factorial</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1]   3.718282   8.387675  13.446202  19.661217  27.846214  38.352077  51.163496  66.153374  83.219555 102.308655 123.399395 146.485246 171.565020 198.639071 227.708053</code></pre>
+<pre><code>#&gt;  [1]   3.718282   8.387675  13.446202  19.661217  27.846214  38.352077
+#&gt;  [7]  51.163496  66.153374  83.219555 102.308655 123.399395 146.485246
+#&gt; [13] 171.565020 198.639071 227.708053</code></pre>
 </div>
 </div>
 <p>In R 4.1.0, developers introduce a shortcut approach to create functions. You can create a function using <code>\()</code> expression, and specify the arguments for your function within the parenthesis. Reworking the previous code, we can use <code>\()</code> instead of <code>function()</code>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(x, \(x) x<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> <span class="fu">log</span>(x) <span class="sc">+</span> <span class="fu">exp</span>(x)<span class="sc">/</span><span class="fu">factorial</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1]   3.718282   8.387675  13.446202  19.661217  27.846214  38.352077  51.163496  66.153374  83.219555 102.308655 123.399395 146.485246 171.565020 198.639071 227.708053</code></pre>
+<pre><code>#&gt;  [1]   3.718282   8.387675  13.446202  19.661217  27.846214  38.352077
+#&gt;  [7]  51.163496  66.153374  83.219555 102.308655 123.399395 146.485246
+#&gt; [13] 171.565020 198.639071 227.708053</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb114"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(x, \(.) .<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> <span class="fu">log</span>(.) <span class="sc">+</span> <span class="fu">exp</span>(.)<span class="sc">/</span><span class="fu">factorial</span>(.))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1]   3.718282   8.387675  13.446202  19.661217  27.846214  38.352077  51.163496  66.153374  83.219555 102.308655 123.399395 146.485246 171.565020 198.639071 227.708053</code></pre>
+<pre><code>#&gt;  [1]   3.718282   8.387675  13.446202  19.661217  27.846214  38.352077
+#&gt;  [7]  51.163496  66.153374  83.219555 102.308655 123.399395 146.485246
+#&gt; [13] 171.565020 198.639071 227.708053</code></pre>
 </div>
 </div>
 <p>Notice that the argument in the anonymous function can be anything.</p>
