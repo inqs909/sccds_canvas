@@ -34,8 +34,36 @@ To learn more about Positron and VS Code, visit the following pages:
 
 ### Layout
 
+The default layout has 3 main panes: an editor, console, and other (right side; session, help, viewer, ...)
+
+![](img/gc_21.png){fig-alt="An image displaying the Positron IDE."}
 
 
+The editor pane allows you to create scripts and documents.
+
+![](img/gc_24.png){fig-alt="An image displaying to editor pane."}
+
+The console pane contains the language console you are working with, as well as a terminal pane.
+
+![](img/gc_26.png){fig-alt="An image displaying the R console."}
+
+
+On the top-right corner, you will notice which language is being used and the current workspace.
+
+![](img/gc_22.png){fig-alt="An image displaying the language being used and workspace."}
+
+
+The button above the programming language being used can let you change the layout of Positron.
+
+![](img/gc_28.png){fig-alt="An image indicating how to customize the layout of Positron"}
+
+Clicking it will create a new window to select a desired layout.
+
+![](img/gc_27.png){fig-alt="An image allowing users to change they layout of an Positron"}
+
+Clicking the "Side-By-Side Layout" will create layout like below.
+
+![](img/gc_29.png){fig-alt="An image showing positron with a Side-By-Side Layout."}
 
 
 ## Data Science Projects
