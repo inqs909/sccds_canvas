@@ -227,8 +227,8 @@ window.Quarto = {
 <p><em>Modifiend from <a href="https://www.inqs.info/stat_comp/">Statistical Computing</a></em></p>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p><a href="https://quarto.org/">Quarto</a> is a file type used to create technical reports while including both R code, or other programming languages, and output in a document. A qmd<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> file is a fancy R Script containing extra capabilities. Additionally, qmd files allow for citations, footnotes, mathematical expressions, links, and much more. Once the document is finished, it can be rendered to a word file, pdf, html file, and much more. Quarto is the considered the next generation of <a href="https://rmarkdown.rstudio.com/">RMarkdown</a>.</p>
-<p>This document is created using a qmd file. You can view the source code <a href="">here</a></p>
+<p><a href="https://quarto.org/">Quarto</a> is a file type used to create technical reports while including either R and/or Python code, or other programming languages, and output the results in a document. A qmd<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> file is a fancy text Script containing extra capabilities to create scientific documentation. Additionally, qmd files allow for citations, footnotes, mathematical expressions, links, and much more. Once the document is finished, it can be rendered to a word file, pdf, html file, and much more. Quarto is the considered the next generation of <a href="https://rmarkdown.rstudio.com/">RMarkdown</a>.</p>
+<p>This document is created using a qmd file. You can view the source code <a href="https://github.com/inqs909/sccds_canvas/blob/main/document.qmd">here</a></p>
 </section>
 <section id="anatomy-of-a-quarto-document" class="level2">
 <h2 class="anchored" data-anchor-id="anatomy-of-a-quarto-document">Anatomy of a Quarto Document</h2>
@@ -344,7 +344,7 @@ window.Quarto = {
 <span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="in">plot(mtcars$mpg,mtcars$drat)</span></span>
 <span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="fig-mtcars" class="quarto-float quarto-figure quarto-figure-center anchored" data-cap-location="bottom" data-fig-align="center">
+<div id="fig-mtcars" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" data-cap-location="bottom">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-mtcars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="document_files/figure-html/fig-mtcars-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="336">
@@ -442,23 +442,23 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
 <figure class="quarto-float quarto-float-tbl figure">
 <div aria-describedby="tbl-mtcarsdata-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="jpjcoxshbk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jpjcoxshbk table {
+<div id="oeaahzcjsk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#oeaahzcjsk table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jpjcoxshbk thead, #jpjcoxshbk tbody, #jpjcoxshbk tfoot, #jpjcoxshbk tr, #jpjcoxshbk td, #jpjcoxshbk th {
+#oeaahzcjsk thead, #oeaahzcjsk tbody, #oeaahzcjsk tfoot, #oeaahzcjsk tr, #oeaahzcjsk td, #oeaahzcjsk th {
   border-style: none;
 }
 
-#jpjcoxshbk p {
+#oeaahzcjsk p {
   margin: 0;
   padding: 0;
 }
 
-#jpjcoxshbk .gt_table {
+#oeaahzcjsk .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -484,12 +484,12 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   border-left-color: #D3D3D3;
 }
 
-#jpjcoxshbk .gt_caption {
+#oeaahzcjsk .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jpjcoxshbk .gt_title {
+#oeaahzcjsk .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -501,7 +501,7 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   border-bottom-width: 0;
 }
 
-#jpjcoxshbk .gt_subtitle {
+#oeaahzcjsk .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -513,7 +513,7 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   border-top-width: 0;
 }
 
-#jpjcoxshbk .gt_heading {
+#oeaahzcjsk .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -525,13 +525,13 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   border-right-color: #D3D3D3;
 }
 
-#jpjcoxshbk .gt_bottom_border {
+#oeaahzcjsk .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jpjcoxshbk .gt_col_headings {
+#oeaahzcjsk .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -546,7 +546,7 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   border-right-color: #D3D3D3;
 }
 
-#jpjcoxshbk .gt_col_heading {
+#oeaahzcjsk .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -566,7 +566,7 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   overflow-x: hidden;
 }
 
-#jpjcoxshbk .gt_column_spanner_outer {
+#oeaahzcjsk .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -578,15 +578,15 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   padding-right: 4px;
 }
 
-#jpjcoxshbk .gt_column_spanner_outer:first-child {
+#oeaahzcjsk .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jpjcoxshbk .gt_column_spanner_outer:last-child {
+#oeaahzcjsk .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jpjcoxshbk .gt_column_spanner {
+#oeaahzcjsk .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -598,11 +598,11 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   width: 100%;
 }
 
-#jpjcoxshbk .gt_spanner_row {
+#oeaahzcjsk .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jpjcoxshbk .gt_group_heading {
+#oeaahzcjsk .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -628,7 +628,7 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   text-align: left;
 }
 
-#jpjcoxshbk .gt_empty_group_heading {
+#oeaahzcjsk .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -643,15 +643,15 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   vertical-align: middle;
 }
 
-#jpjcoxshbk .gt_from_md > :first-child {
+#oeaahzcjsk .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jpjcoxshbk .gt_from_md > :last-child {
+#oeaahzcjsk .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jpjcoxshbk .gt_row {
+#oeaahzcjsk .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -670,7 +670,7 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   overflow-x: hidden;
 }
 
-#jpjcoxshbk .gt_stub {
+#oeaahzcjsk .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -683,7 +683,7 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   padding-right: 5px;
 }
 
-#jpjcoxshbk .gt_stub_row_group {
+#oeaahzcjsk .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -697,15 +697,15 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   vertical-align: top;
 }
 
-#jpjcoxshbk .gt_row_group_first td {
+#oeaahzcjsk .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jpjcoxshbk .gt_row_group_first th {
+#oeaahzcjsk .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jpjcoxshbk .gt_summary_row {
+#oeaahzcjsk .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -715,16 +715,16 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   padding-right: 5px;
 }
 
-#jpjcoxshbk .gt_first_summary_row {
+#oeaahzcjsk .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jpjcoxshbk .gt_first_summary_row.thick {
+#oeaahzcjsk .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jpjcoxshbk .gt_last_summary_row {
+#oeaahzcjsk .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -734,7 +734,7 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   border-bottom-color: #D3D3D3;
 }
 
-#jpjcoxshbk .gt_grand_summary_row {
+#oeaahzcjsk .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -744,7 +744,7 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   padding-right: 5px;
 }
 
-#jpjcoxshbk .gt_first_grand_summary_row {
+#oeaahzcjsk .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -754,7 +754,7 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   border-top-color: #D3D3D3;
 }
 
-#jpjcoxshbk .gt_last_grand_summary_row_top {
+#oeaahzcjsk .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -764,11 +764,11 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   border-bottom-color: #D3D3D3;
 }
 
-#jpjcoxshbk .gt_striped {
+#oeaahzcjsk .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jpjcoxshbk .gt_table_body {
+#oeaahzcjsk .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -777,7 +777,7 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   border-bottom-color: #D3D3D3;
 }
 
-#jpjcoxshbk .gt_footnotes {
+#oeaahzcjsk .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -791,7 +791,7 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   border-right-color: #D3D3D3;
 }
 
-#jpjcoxshbk .gt_footnote {
+#oeaahzcjsk .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -800,7 +800,7 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   padding-right: 5px;
 }
 
-#jpjcoxshbk .gt_sourcenotes {
+#oeaahzcjsk .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -814,7 +814,7 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   border-right-color: #D3D3D3;
 }
 
-#jpjcoxshbk .gt_sourcenote {
+#oeaahzcjsk .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -822,72 +822,72 @@ Figure&nbsp;1: This is a scatter plot of MTCARS’ MPG and DRAT
   padding-right: 5px;
 }
 
-#jpjcoxshbk .gt_left {
+#oeaahzcjsk .gt_left {
   text-align: left;
 }
 
-#jpjcoxshbk .gt_center {
+#oeaahzcjsk .gt_center {
   text-align: center;
 }
 
-#jpjcoxshbk .gt_right {
+#oeaahzcjsk .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jpjcoxshbk .gt_font_normal {
+#oeaahzcjsk .gt_font_normal {
   font-weight: normal;
 }
 
-#jpjcoxshbk .gt_font_bold {
+#oeaahzcjsk .gt_font_bold {
   font-weight: bold;
 }
 
-#jpjcoxshbk .gt_font_italic {
+#oeaahzcjsk .gt_font_italic {
   font-style: italic;
 }
 
-#jpjcoxshbk .gt_super {
+#oeaahzcjsk .gt_super {
   font-size: 65%;
 }
 
-#jpjcoxshbk .gt_footnote_marks {
+#oeaahzcjsk .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jpjcoxshbk .gt_asterisk {
+#oeaahzcjsk .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jpjcoxshbk .gt_indent_1 {
+#oeaahzcjsk .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jpjcoxshbk .gt_indent_2 {
+#oeaahzcjsk .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jpjcoxshbk .gt_indent_3 {
+#oeaahzcjsk .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jpjcoxshbk .gt_indent_4 {
+#oeaahzcjsk .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jpjcoxshbk .gt_indent_5 {
+#oeaahzcjsk .gt_indent_5 {
   text-indent: 25px;
 }
 
-#jpjcoxshbk .katex-display {
+#oeaahzcjsk .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#jpjcoxshbk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#oeaahzcjsk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

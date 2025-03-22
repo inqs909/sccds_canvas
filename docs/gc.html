@@ -86,7 +86,15 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#what-is-google-colab" id="toc-what-is-google-colab" class="nav-link" data-scroll-target="#what-is-google-colab">What is Google Colab?</a></li>
   <li><a href="#creating-a-notebook-in-google-colab" id="toc-creating-a-notebook-in-google-colab" class="nav-link" data-scroll-target="#creating-a-notebook-in-google-colab">Creating a Notebook in Google Colab</a></li>
+  <li><a href="#google-colab-notebook" id="toc-google-colab-notebook" class="nav-link" data-scroll-target="#google-colab-notebook">Google Colab Notebook</a></li>
+  <li><a href="#choosing-a-language" id="toc-choosing-a-language" class="nav-link" data-scroll-target="#choosing-a-language">Choosing a Language</a></li>
+  <li><a href="#uploading-a-jupyter-notebook-to-google-colab" id="toc-uploading-a-jupyter-notebook-to-google-colab" class="nav-link" data-scroll-target="#uploading-a-jupyter-notebook-to-google-colab">Uploading a Jupyter Notebook to Google Colab</a></li>
+  <li><a href="#google-assignments" id="toc-google-assignments" class="nav-link" data-scroll-target="#google-assignments">Google Assignments</a>
+  <ul class="collapse">
+  <li><a href="#creating-an-assignment" id="toc-creating-an-assignment" class="nav-link" data-scroll-target="#creating-an-assignment">Creating an Assignment</a></li>
+  </ul></li>
   <li><a href="#problems-with-google-colab" id="toc-problems-with-google-colab" class="nav-link" data-scroll-target="#problems-with-google-colab">Problems with Google Colab</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -102,13 +110,79 @@ ul.task-list li input[type="checkbox"] {
 <p>Google Colaboratory (Colab) is an online service that provides both computing resources and a jupyter notebook environment in both R and Python. In this page, we will discuss how to create data science assignment with google colab and embedding it in Canvas.</p>
 <section id="what-is-google-colab" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-google-colab">What is Google Colab?</h2>
-<p>Google Colab is a free, cloud-based <a href="https://jupyter.org/">Jupyter notebook</a> environment that allows you to execute R/python Python code through a web browser. It provides free access to RAM/CPUs/GPUs/TPUs to complete computational tasks. It is designed for data science, machine learning, and education that is integradted with Google Drive for saving and sharing notebooks.</p>
+<p>Google Colab is a free, cloud-based <a href="https://jupyter.org/">Jupyter notebook</a> environment that allows you to execute R/Python code through a web browser. It provides free access to RAM/CPUs/GPUs/TPUs to complete computational tasks. It is designed for data science, machine learning, and education that is integradted with Google Drive for saving and sharing notebooks.</p>
 </section>
 <section id="creating-a-notebook-in-google-colab" class="level2">
 <h2 class="anchored" data-anchor-id="creating-a-notebook-in-google-colab">Creating a Notebook in Google Colab</h2>
 <p>The simplest way to create a notebook in Google Colab is to go to your school’s Google Drive, click on the “New” button, click “More”, and click “Google Colaboratory”:</p>
 <p><img src="img/gc_1.png" class="img-fluid"></p>
-<p>This will create a new tab</p>
+<p>This will create a new tab in your browser that looks like this:</p>
+<p><img src="img/gc_2.png" class="img-fluid"></p>
+<p>You can now create a notebook assignments with questions and code.</p>
+</section>
+<section id="google-colab-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="google-colab-notebook">Google Colab Notebook</h2>
+<p>In a Google colab notebook, there are 3 main cells that you will have: text, code, and output cells.</p>
+<p><strong>Code Cells:</strong></p>
+<ul>
+<li>Containa executable code.</li>
+<li>Output appears below the cell.</li>
+<li>Can be run individually or all at once.</li>
+</ul>
+<p><strong>Text Cells (Markdown Cells):</strong></p>
+<ul>
+<li>Contain formatted text (<a href="https://quarto.org/docs/authoring/markdown-basics.html">Markdown</a>).</li>
+<li>Used for explanations, documentation, etc.</li>
+</ul>
+<p><strong>Output Cells:</strong></p>
+<ul>
+<li>Automatically generated.</li>
+<li>Display results of code execution.</li>
+</ul>
+<p>These cells will allow to create a notebook that both explains and executes data science projects.</p>
+</section>
+<section id="choosing-a-language" class="level2">
+<h2 class="anchored" data-anchor-id="choosing-a-language">Choosing a Language</h2>
+<p>Google Colab will execute a notebook in 3 different languages seperately: Julia, R, and Python. To change the runtime (langauge) of a notebook, select the “Runtime” button, followed by “Change Runtime Type”:</p>
+<p><img src="img/gc_3.png" class="img-fluid"></p>
+<p>The a pop-up window will appear. You can then select which language you may want to choose from:</p>
+<p><img src="img/gc_4.png" class="img-fluid"></p>
+<p>Afterwards, the notebook will only use the language you choose to execute the code cells.</p>
+</section>
+<section id="uploading-a-jupyter-notebook-to-google-colab" class="level2">
+<h2 class="anchored" data-anchor-id="uploading-a-jupyter-notebook-to-google-colab">Uploading a Jupyter Notebook to Google Colab</h2>
+<p>If you have a jupyter notebook (.ipynb file), you can use it in Google Colab. First, you must upload the file to Google Drive. Afterwards, you can double click on the file and it should automatically open up in Google Colab. If it does not work, you can right-click on the file, select “Open With”, and then select “Google Colaboratory”:</p>
+<p><img src="img/gc_19.png" class="img-fluid"></p>
+<p>Once in Google Colab, set the “Runtime” by following the instructions <a href="#choosing-a-language">here</a>.</p>
+<p>Afterwards, save the notebook from the “File” Menu, and “Move” the notebook to the location that you want it stored in your Google Drive. Note, your saved notebook may be in a new folder called “Google Colab” in Google Drive.</p>
+</section>
+<section id="google-assignments" class="level2">
+<h2 class="anchored" data-anchor-id="google-assignments">Google Assignments</h2>
+<p>If you are using Canvas at your institution and you are allowed to use Google Assignments on Canvas, you can create what is known as Google Assignment to assign a Jupyter notebook to your students. This allows your students to access and submit a notebook from the confort of their course Canvas page.</p>
+<section id="creating-an-assignment" class="level3">
+<h3 class="anchored" data-anchor-id="creating-an-assignment">Creating an Assignment</h3>
+<p>To create a Google assignment, first go to the Assignments tab on your Course Canvas page. You will want to click on “+ Assignment” button to create a new assignmnent.</p>
+<p><img src="img/gc_5.png" class="img-fluid" data-group="my-group"></p>
+<p>Scroll down to the “Submission Type” section and change “Online” to “External Tool” from the scroll down menu:</p>
+<p><img src="img/gc_6.png" class="img-fluid" data-group="my-group"></p>
+<p><img src="img/gc_8.png" class="img-fluid" data-group="my-group"></p>
+<p>A pop-up window will appear and scroll down and select the “Google Assignments (LTI X.X)”:</p>
+<p><img src="img/gc_10.png" class="img-fluid" data-group="my-group"></p>
+<p>A new window will pop-up that will configure the Google Assignment. Click the “Link” button indicating that you want to use a specific Google Account.</p>
+<p><img src="img/gc_11.png" class="img-fluid" data-group="my-group"></p>
+<p>Click the “Link” button again allowing Google Assignments to access your Google Drive.</p>
+<p><img src="img/gc_12.png" class="img-fluid" data-group="my-group"></p>
+<p>Click the “Attach” button to begin setting up</p>
+<p><img src="img/gc_13.png" class="img-fluid" data-group="my-group"></p>
+<p>Navigate through your Google Drive where the Google Colab notebook you wish to select is located.</p>
+<p><img src="img/gc_14.png" class="img-fluid" data-group="my-group"></p>
+<p>Select a notebook and click the “Add Button”</p>
+<p><img src="img/gc_16.png" class="img-fluid" data-group="my-group"></p>
+<p>Click the “Create” button to create the assignment.</p>
+<p><img src="img/gc_17.png" class="img-fluid" data-group="my-group"></p>
+<p>Back to assignment page on Canvas, you will see which students have started the assignment and which students submitted the assignment.</p>
+<p><img src="img/gc_18.png" class="img-fluid" data-group="my-group"></p>
+</section>
 </section>
 <section id="problems-with-google-colab" class="level2">
 <h2 class="anchored" data-anchor-id="problems-with-google-colab">Problems with Google Colab</h2>
@@ -116,6 +190,9 @@ ul.task-list li input[type="checkbox"] {
 <li>Google Colab has implemented the use of Gemini AI into the notebooks. Instructors may find this problematic where they want students to learn how to code with out the help of AI.</li>
 <li>Some students may have trouble accessing google assignments from their browsers. The solution is to have students access the assignment on a chromium-based browser.</li>
 </ul>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
 
 
 </section>

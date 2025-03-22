@@ -17,9 +17,9 @@ bibliography: document.bib
 
 ## Introduction
 
-[Quarto](https://quarto.org/) is a file type used to create technical reports while including both R code, or other programming languages, and output in a document. A qmd^[QMD is the file extension to use the Quarto engine. For this document Quarto and QMD are used interchangeably.] file is a fancy R Script containing extra capabilities. Additionally, qmd files allow for citations, footnotes, mathematical expressions, links, and much more. Once the document is finished, it can be rendered to a word file, pdf, html file, and much more. Quarto is the considered the next generation of [RMarkdown](https://rmarkdown.rstudio.com/).
+[Quarto](https://quarto.org/) is a file type used to create technical reports while including either R and/or Python code, or other programming languages, and output the results in a document. A qmd^[QMD is the file extension to use the Quarto engine. For this document Quarto and QMD are used interchangeably.] file is a fancy text Script containing extra capabilities to create scientific documentation. Additionally, qmd files allow for citations, footnotes, mathematical expressions, links, and much more. Once the document is finished, it can be rendered to a word file, pdf, html file, and much more. Quarto is the considered the next generation of [RMarkdown](https://rmarkdown.rstudio.com/).
 
-This document is created using a qmd file. You can view the source code [here]()
+This document is created using a qmd file. You can view the source code [here](https://github.com/inqs909/sccds_canvas/blob/main/document.qmd)
 
 ## Anatomy of a Quarto Document
 
@@ -243,6 +243,7 @@ Notice that @tbl-mtcarsdata is easily produced using the `gt()` function with a 
 Table @tbl-mtcarsdata is referenced by using the label created in the chunk and the `@tbl-mtcarsdata`. To install `gt` run the following line in your console:
 
 ```{r}
+#| eval: false
 install.packages("gt")
 ```
 
