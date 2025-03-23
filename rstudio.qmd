@@ -1,4 +1,7 @@
-# R
+---
+title: "R and RStudio"
+date-modified: "2024-09-28"
+---
 
 R is a programming language that allows users to compute statistics and graphics. It is based on [S](https://en.wikipedia.org/wiki/S_%28programming_language%29) and is a [GNU Project](https://www.gnu.org/). It has several built-in function to compute statistics with ease, as well as allowing users to build their own functions to be executed.
 

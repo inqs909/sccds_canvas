@@ -1,5 +1,7 @@
-
-# Google Colab and Google Assignments
+---
+title: "Google Colab and Assignments"
+date-modified: "2025-03-21"
+---
 
 Google Colaboratory (Colab) is an online service that provides both computing resources and a jupyter notebook environment in both R and Python. In this page, we will discuss how to create data science assignment with google colab and embedding it in Canvas. 
 

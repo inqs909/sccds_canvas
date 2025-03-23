@@ -1,11 +1,11 @@
 ---
+title: Data Cleaning in R
 knitr: 
   opts_chunk: 
     message: false
     warning: false
+date-modified: "2024-09-28"
 ---
-
-# Data Cleaning in R
 
 *Modifiend from [Statistical Computing](https://www.inqs.info/stat_comp/)*
 

@@ -1,4 +1,7 @@
-# Positron
+---
+title: "Positron"
+date-modified: "2025-03-22"
+---
 
 [Positron](https://positron.posit.co/) is the next [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) developed by [Posit](https://posit.co/), the creators of [RStudio]() to deploy data science projects. 
 

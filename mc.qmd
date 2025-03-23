@@ -1,6 +1,6 @@
 ---
 title: "Monte Carlo Methods"
-date-modified: "`r Sys.Date()`"
+date-modified: "2025-03-23"
 ---
 
 ## R Setup

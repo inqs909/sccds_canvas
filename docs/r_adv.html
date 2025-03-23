@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>r_adv – SCCDS Canvas</title>
+<title>Advanced R Programming – SCCDS Canvas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -147,9 +147,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#advanced-r-programming" id="toc-advanced-r-programming" class="nav-link active" data-scroll-target="#advanced-r-programming">Advanced R Programming</a>
-  <ul class="collapse">
-  <li><a href="#control-flow" id="toc-control-flow" class="nav-link" data-scroll-target="#control-flow">Control Flow</a>
+  <li><a href="#control-flow" id="toc-control-flow" class="nav-link active" data-scroll-target="#control-flow">Control Flow</a>
   <ul class="collapse">
   <li><a href="#indexing" id="toc-indexing" class="nav-link" data-scroll-target="#indexing">Indexing</a></li>
   <li><a href="#ifelse-statements" id="toc-ifelse-statements" class="nav-link" data-scroll-target="#ifelse-statements">If/Else Statements</a></li>
@@ -178,18 +176,37 @@ window.Quarto = {
   <li><a href="#pipes" id="toc-pipes" class="nav-link" data-scroll-target="#pipes">Pipes</a></li>
   <li><a href="#keyboard-shortcuts" id="toc-keyboard-shortcuts" class="nav-link" data-scroll-target="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
   </ul></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Advanced R Programming</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="advanced-r-programming" class="level1">
-<h1>Advanced R Programming</h1>
+    
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">September 28, 2024</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
 <p><em>Modifiend from <a href="https://www.inqs.info/stat_comp/">Statistical Computing</a></em></p>
 <section id="control-flow" class="level2">
 <h2 class="anchored" data-anchor-id="control-flow">Control Flow</h2>
@@ -404,7 +421,7 @@ Important Concept
 <span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">"Zero"</span>)</span>
 <span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] "Positive"</code></pre>
+<pre><code>#&gt; [1] "Negative"</code></pre>
 </div>
 </div>
 </section>
@@ -659,15 +676,15 @@ Important Concept
 <span id="cb66-11"><a href="#cb66-11" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb66-12"><a href="#cb66-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1] 2.4527502 0.5767457 1.4837892 0.3257507        NA        NA        NA
-#&gt;  [8]        NA        NA        NA        NA        NA        NA        NA
+<pre><code>#&gt;  [1] 1.1357089 2.3751356 1.0943894 0.9565371 2.5609791 2.3173035 0.9526065
+#&gt;  [8] 2.2537956 1.0597437 0.8413901 1.5723293 1.0234900 1.1266419        NA
 #&gt; [15]        NA        NA        NA        NA        NA        NA        NA
 #&gt; [22]        NA        NA        NA        NA        NA        NA        NA
 #&gt; [29]        NA        NA</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] -0.2388212</code></pre>
+<pre><code>#&gt; [1] -0.3409024</code></pre>
 </div>
 </div>
 <p>Notice that the vector does not get filled up all the way, that is because the loop will break once a negative number is simulated</p>
@@ -712,11 +729,11 @@ Important Note
 <span id="cb71-11"><a href="#cb71-11" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb71-12"><a href="#cb71-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1]        NA 1.6697450 1.1462425        NA 1.3703101 0.6868781 1.3219222
-#&gt;  [8] 1.4819987 0.7519101 1.3075894 2.6601485 1.2142953 0.3381772 1.1179054
-#&gt; [15] 2.0471861 2.6907663 0.9117357 1.5215130 1.4074986 1.0802269 2.1459296
-#&gt; [22]        NA 0.3450295        NA 0.9944334 1.9761698 1.2077452 2.8188403
-#&gt; [29] 2.6614463 0.5318778</code></pre>
+<pre><code>#&gt;  [1] 0.060117000 1.597481479          NA          NA 1.211944469 3.113348469
+#&gt;  [7] 1.347660849 0.376260886 0.275504874 1.560261082 0.908048206 1.775241093
+#&gt; [13] 1.527820041 2.129713863 1.467189442 2.440443912 1.933988934 0.248618631
+#&gt; [19] 0.240416132 0.932383268 1.671862443 0.382260477 0.581390992 0.861299398
+#&gt; [25] 1.428066730 2.185063982 2.388002939          NA 0.001469836 0.578766324</code></pre>
 </div>
 </div>
 <p>As you can see, the vector contains missing values, these were the iterations that a negative number was simulated.</p>
@@ -762,11 +779,11 @@ Important Concept
 </div>
 <div class="sourceCode cell-code" id="cb76"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1] 0.90320622 0.83449216 1.02033092 0.13669183 1.80496048 1.72213631
-#&gt;  [7] 0.57143017 0.86489082 2.05008675 0.16449676 0.45626998 0.25330324
-#&gt; [13] 0.62001720 0.08529869 0.68825118 0.84334825 0.34945073 2.03580201
-#&gt; [19] 1.16784836 0.63612517 0.20848962 0.22496265 2.41939651 0.25872602
-#&gt; [25] 0.55779251 1.28803754 0.06512872 0.71883273 0.80506991 0.36376052</code></pre>
+<pre><code>#&gt;  [1] 0.17037948 1.58915921 0.64739129 2.31685865 1.93608574 0.72217244
+#&gt;  [7] 1.68345254 1.82592443 1.34731716 0.94992960 1.02337885 0.65255619
+#&gt; [13] 0.46282405 0.90643567 0.12663059 0.39286736 1.41329848 0.83898292
+#&gt; [19] 0.43257044 0.74996865 1.14529020 0.62923530 0.64099451 0.94788134
+#&gt; [25] 1.17510923 0.09155401 0.08608904 1.41029523 0.24155896 0.65690670</code></pre>
 </div>
 </div>
 <p>Notice that we do not use an <code>else</code> statement. This is because we do not need R to complete a task if the condition fails.</p>
@@ -1366,7 +1383,6 @@ Important Concept
 </div>
 
 
-</section>
 </section>
 </section>
 

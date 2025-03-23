@@ -1,4 +1,7 @@
-# Advanced R Programming
+---
+title: "Advanced R Programming"
+date-modified: "2024-09-28"
+---
 
 *Modifiend from [Statistical Computing](https://www.inqs.info/stat_comp/)*
 
