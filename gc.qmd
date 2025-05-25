@@ -121,5 +121,11 @@ Back to assignment page on Canvas, you will see which students have started the 
 
 - Google Colab has implemented the use of Gemini AI into the notebooks. Instructors may find this problematic where they want students to learn how to code with out the help of AI.
 - Some students may have trouble accessing google assignments from their browsers. The solution is to have students access the assignment on a chromium-based browser.
+- A notebook may be executing a code for an abnormally longer time than expected. The common cause is that the notebook got disconnected from the Google servers.
+    - Check to make sure the laptop has internet.
+    - Download the notebook as an ipynb.
+- Google Servers Not Connecting. There are rare times when the Google Colab Server are down. Some students will not be able to access the server to execute code. Based on my experience (Isaac QS), it only happened once a year, and it only happened for one hour.
+
+
 
 ## Resources

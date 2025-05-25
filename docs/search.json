@@ -95,7 +95,7 @@
     "href": "gc.html#problems-with-google-colab",
     "title": "Google Colab and Assignments",
     "section": "Problems with Google Colab",
-    "text": "Problems with Google Colab\n\nGoogle Colab has implemented the use of Gemini AI into the notebooks. Instructors may find this problematic where they want students to learn how to code with out the help of AI.\nSome students may have trouble accessing google assignments from their browsers. The solution is to have students access the assignment on a chromium-based browser."
+    "text": "Problems with Google Colab\n\nGoogle Colab has implemented the use of Gemini AI into the notebooks. Instructors may find this problematic where they want students to learn how to code with out the help of AI.\nSome students may have trouble accessing google assignments from their browsers. The solution is to have students access the assignment on a chromium-based browser.\nDisconnecting Google Colab (Write about.)\nA notebook may be executing a code for an abnormally longer time than expected. The common cause is that the notebook got disconnected from the Google servers.\n\nCheck to make sure the laptop has internet.\nDownload the notebook as an ipynb."
   },
   {
     "objectID": "gc.html#resources",
