@@ -35,7 +35,7 @@ A sampling distribution can be thought as the distribution of an estimator (stat
 
 Assume that $X_1, \ldots, X_{25}\overset{iid}{\sim}N(8, 3)$, normal distribution with mean 8 and variance 3. Depending on the sample, the value of $\bar X$ will change due to the randomness being generated. Therefore, a different sample will yield a different value of $\bar X$. The R code below will demonstrate the potential distribution $\bar X$ by simulating numerous samples from distribution above and generating the histogram of $\bar X$.
 
-#### 
+#### Simulation
 
 To simulate a random sample of 25 that follows a normal distribution, we can use the `rnorm` function. Afterwards, we will compute the mean of the sample.
 
@@ -65,7 +65,7 @@ data.frame(xbar = x_means) |>
   theme_bw()
 ```
 
-Notice that the values of $\bar X$ are bell shaped centered around the value 8. This makes us think that the sampling distribution for $\bar X$ may follow a normal distribution. In fact, if a random is said to be generated from a normal distribution, then the distribution will also be normally distributed. For this example, the distribution of $\bar X$ is $N(8, 3/25)$. We can plot the probability density function on the histogram and they will closely align.
+Notice that the values of $\bar X$ are bell shaped centered around the value 8. This makes us think that the sampling distribution for $\bar X$ may follow a normal distribution. In fact, if a random sample is said to be generated from a normal distribution, then the distribution will also be normally distributed. For this example, the distribution of $\bar X$ is $N(8, 3/25)$. We can plot the probability density function on the histogram and they will closely align.
 
 ```{r}
 # Plotting the histogram of the sample means

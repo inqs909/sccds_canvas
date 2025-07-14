@@ -197,14 +197,14 @@ window.Quarto = {
 <section id="normal-distribution-example" class="level3">
 <h3 class="anchored" data-anchor-id="normal-distribution-example">Normal Distribution Example</h3>
 <p>Assume that <span class="math inline">\(X_1, \ldots, X_{25}\overset{iid}{\sim}N(8, 3)\)</span>, normal distribution with mean 8 and variance 3. Depending on the sample, the value of <span class="math inline">\(\bar X\)</span> will change due to the randomness being generated. Therefore, a different sample will yield a different value of <span class="math inline">\(\bar X\)</span>. The R code below will demonstrate the potential distribution <span class="math inline">\(\bar X\)</span> by simulating numerous samples from distribution above and generating the histogram of <span class="math inline">\(\bar X\)</span>.</p>
-<section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section"></h4>
+<section id="simulation" class="level4">
+<h4 class="anchored" data-anchor-id="simulation">Simulation</h4>
 <p>To simulate a random sample of 25 that follows a normal distribution, we can use the <code>rnorm</code> function. Afterwards, we will compute the mean of the sample.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x1 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">25</span>, <span class="dv">8</span>, <span class="fu">sqrt</span>(<span class="dv">3</span>))</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] 8.990763</code></pre>
+<pre><code>#&gt; [1] 7.966528</code></pre>
 </div>
 </div>
 <p>Notice that the value is close to 8. Generate (run the code below) multiple samples and see what mean are values are being produced:</p>
@@ -237,7 +237,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoieHcgPC0gcm5vcm0oMjUsIDgs
 </div>
 </div>
 </div>
-<p>Notice that the values of <span class="math inline">\(\bar X\)</span> are bell shaped centered around the value 8. This makes us think that the sampling distribution for <span class="math inline">\(\bar X\)</span> may follow a normal distribution. In fact, if a random is said to be generated from a normal distribution, then the distribution will also be normally distributed. For this example, the distribution of <span class="math inline">\(\bar X\)</span> is <span class="math inline">\(N(8, 3/25)\)</span>. We can plot the probability density function on the histogram and they will closely align.</p>
+<p>Notice that the values of <span class="math inline">\(\bar X\)</span> are bell shaped centered around the value 8. This makes us think that the sampling distribution for <span class="math inline">\(\bar X\)</span> may follow a normal distribution. In fact, if a random sample is said to be generated from a normal distribution, then the distribution will also be normally distributed. For this example, the distribution of <span class="math inline">\(\bar X\)</span> is <span class="math inline">\(N(8, 3/25)\)</span>. We can plot the probability density function on the histogram and they will closely align.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting the histogram of the sample means</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># And imposing the density function of a normal distribution</span></span>
