@@ -1,14 +1,19 @@
 ---
 title: "Statistical Estimators"
 date-modified: "2024-09-28"
+format: live-html
+engine: knitr
+webr:
+  packages:
+    - ggplot2
 ---
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
 
 ## R Packages Used
 
 ```{r}
 #| code-fold: show
-
-
 library(ggplot2)
 ```
 
@@ -39,16 +44,11 @@ x1 <- rnorm(25, 8, sqrt(3))
 mean(x1)
 ```
 
-Notice that the value is close to 8. If we generate two different samples, notice how all means calculated are different from each other.
+Notice that the value is close to 8. Generate (run the code below) multiple samples and see what mean are values are being produced:
 
-```{r}
-x2 <- rnorm(25, 8, sqrt(3))
-mean(x2)
-```
-
-```{r}
-x3 <- rnorm(25, 8, sqrt(3))
-mean(x3)
+```{webr}
+xw <- rnorm(25, 8, sqrt(3))
+mean(xw)
 ```
 
 Now to visualize see the distribution of $\bar X$, we will simulate 10,000 samples, compute the mean of each sample, and construct the a histogram of the computed means.
@@ -78,6 +78,7 @@ data.frame(xbar = x_means, y = dnorm(x_means, 8, sqrt(3/25))) |>
   theme_bw()
 ```
 
+
 ## Central Limit Theorem
 
 The central limit theorem is the framework for several of hypothesis tests that are based on probability models.
@@ -102,95 +103,59 @@ The central limit theorem allows us to assume the distribution of $\bar X$ regar
 
 ### $\chi^2$ Example
 
-Assume that $X_1, \ldots, X_{25}\overset{iid}{\sim}\chi^2(4)$, Chi-Square distribution with 4 degrees of freedom. According to the central limit theorem, as $n\rightarrow \infty$, the distribution for $\bar X$ will approximately be normal with a mean of $4$ and variance $8/n$. The following examples show how the distribution begin to follow a normal distribution (red line) as $n$ increases 15, 30, 50, 100, 1000.
+Assume that $X_1, \ldots, X_{n}\overset{iid}{\sim}\chi^2(4)$, Chi-Square distribution with 4 degrees of freedom. According to the central limit theorem, as $n\rightarrow \infty$, the distribution for $\bar X$ will approximately be normal with a mean of $4$ and variance $8/n$.
 
-#### $n = 15$
+#### Varying Sample Sizes
 
-```{r}
+Run the following examples to show how the distribution begins to follow a normal distribution (red line) as $n$ increases 15, 30, 50, 100, 1000. **Change the number on line 3 to see how the distribtion changes**. 
 
-# Generate 10,000 samples of size 15 
+
+
+```{webr}
+#| warning: false
+# Generate 1,000 samples of size nn
 # Obtain the mean for all the samples
-x_samples <- replicate(10000, rchisq(15, 4))
-x_means <- colMeans(x_samples)
-
-# Plotting the histogram of the sample means
-# And imposing the density function of a normal distribution
-data.frame(xbar = x_means, y = dnorm(x_means, 4, sqrt(8/15))) |> 
-  ggplot(aes(xbar, y = after_stat(density))) +
-  geom_histogram() +
-  geom_line(aes(xbar, y), col = "red", lwd = 1) +
-  theme_bw()
-```
-
-#### $n = 30$
-
-```{r}
-
-# Generate 10,000 samples of size 30
-# Obtain the mean for all the samples
-x_samples <- replicate(10000, rchisq(30, 4))
+nn <- 15
+x_samples <- replicate(1000, rchisq(nn, 4))
 x_means <- colMeans(x_samples)
 
 # Plotting the histogram of the sample means
 # And imposing the density function of a normal distribution
 
-data.frame(xbar = x_means, y = dnorm(x_means, 4, sqrt(8/30))) |> 
+data.frame(xbar = x_means, y = dnorm(x_means, 4, sqrt(8/nn))) |> 
   ggplot(aes(xbar, y = after_stat(density))) +
   geom_histogram() +
   geom_line(aes(xbar, y), col = "red", lwd = 1) +
+  ggtitle(paste0("N = ", nn)) +
   theme_bw()
 ```
 
-#### $n = 50$
+### Poisson Example
 
-```{r}
+Assume that $X_1, \ldots, X_{n}\overset{iid}{\sim}Pois(3.2)$, Poisson  distribution with a rate of 3.2. According to the central limit theorem, as $n\rightarrow \infty$, the distribution for $\bar X$ will approximately be normal with a mean of $3.2$ and variance $3.2/n$.
 
-# Generate 10,000 samples of size 50
+#### Varying Sample Sizes
+
+Run the following examples to show how the distribution begins to follow a normal distribution (red line) as $n$ increases 15, 30, 50, 100, 1000. **Change the number on line 3 to see how the distribtion changes**. 
+
+
+
+```{webr}
+#| warning: false
+# Generate 1,000 samples of size nn
 # Obtain the mean for all the samples
-x_samples <- replicate(10000, rchisq(50, 4))
+nn <- 15
+x_samples <- replicate(1000, rpois(nn, lambda = 3.2))
 x_means <- colMeans(x_samples)
 
 # Plotting the histogram of the sample means
 # And imposing the density function of a normal distribution
-data.frame(xbar = x_means, y = dnorm(x_means, 4, sqrt(8/50))) |> 
+
+data.frame(xbar = x_means, y = dnorm(x_means, 3.2, sqrt(3.2/nn))) |> 
   ggplot(aes(xbar, y = after_stat(density))) +
   geom_histogram() +
   geom_line(aes(xbar, y), col = "red", lwd = 1) +
+  ggtitle(paste0("N = ", nn)) +
   theme_bw()
 ```
 
-#### $n = 100$
-
-```{r}
-
-# Generate 10,000 samples of size 100
-# Obtain the mean for all the samples
-x_samples <- replicate(10000, rchisq(100, 4))
-x_means <- colMeans(x_samples)
-
-# Plotting the histogram of the sample means
-# And imposing the density function of a normal distribution
-data.frame(xbar = x_means, y = dnorm(x_means, 4, sqrt(8/100))) |> 
-  ggplot(aes(xbar, y = after_stat(density))) +
-  geom_histogram() +
-  geom_line(aes(xbar, y), col = "red", lwd = 1) +
-  theme_bw()
-```
-
-#### $n = 1000$
-
-```{r}
-
-# Generate 10,000 samples of size 1000 
-# Obtain the mean for all the samples
-x_samples <- replicate(10000, rchisq(1000, 4))
-x_means <- colMeans(x_samples)
-
-# Plotting the histogram of the sample means
-# And imposing the density function of a normal distribution
-data.frame(xbar = x_means, y = dnorm(x_means, 4, sqrt(8/1000))) |> 
-  ggplot(aes(xbar, y = after_stat(density))) +
-  geom_histogram() +
-  geom_line(aes(xbar, y), col = "red", lwd = 1) +
-  theme_bw()
-```
