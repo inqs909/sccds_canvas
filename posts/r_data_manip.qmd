@@ -4,7 +4,8 @@ knitr:
   opts_chunk: 
     message: false
     warning: false
-date-modified: "2024-09-28"
+date: "2024-09-28"
+date-modified: "2024-10-23"
 ---
 
 *Modifiend from [Statistical Computing](https://www.inqs.info/stat_comp/)*

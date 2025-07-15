@@ -1,5 +1,6 @@
 ---
 title: "The Bootstrap Method"
+date: "2024-10-11"
 date-modified: "2024-10-16"
 ---
 

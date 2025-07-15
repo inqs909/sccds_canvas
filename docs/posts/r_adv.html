@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-09-28">
 
 <title>Advanced R Programming – SCCDS Canvas</title>
 <style>
@@ -194,11 +195,17 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 28, 2024</p>
+    </div>
+  </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">September 28, 2024</p>
+      <p class="date-modified">October 27, 2024</p>
     </div>
   </div>
     
@@ -423,7 +430,7 @@ Important Concept
 <span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">"Zero"</span>)</span>
 <span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] "Positive"</code></pre>
+<pre><code>#&gt; [1] "Negative"</code></pre>
 </div>
 </div>
 </section>
@@ -678,15 +685,12 @@ Important Concept
 <span id="cb66-11"><a href="#cb66-11" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb66-12"><a href="#cb66-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1] 1.3954233 0.8927389 2.2485194 1.6589448 0.5535698 1.3509416 1.1938515
-#&gt;  [8] 0.4654868 0.4943261 1.3269543 1.4196090 0.3539293 0.5391940 1.8018179
-#&gt; [15] 0.1858981        NA        NA        NA        NA        NA        NA
-#&gt; [22]        NA        NA        NA        NA        NA        NA        NA
-#&gt; [29]        NA        NA</code></pre>
+<pre><code>#&gt;  [1] NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA NA
+#&gt; [26] NA NA NA NA NA</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] -0.367347</code></pre>
+<pre><code>#&gt; [1] -0.609801</code></pre>
 </div>
 </div>
 <p>Notice that the vector does not get filled up all the way, that is because the loop will break once a negative number is simulated</p>
@@ -731,11 +735,11 @@ Important Note
 <span id="cb71-11"><a href="#cb71-11" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb71-12"><a href="#cb71-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1] 1.09045664         NA         NA 1.22156873 1.43664144         NA
-#&gt;  [7] 1.55755657 0.08426927         NA 0.55631399 0.99574037 1.64317084
-#&gt; [13] 0.74293447 1.09689461 1.05791559 1.31386050         NA 2.98201794
-#&gt; [19] 0.55503290 1.20503389 1.87843378 0.30392004         NA 0.16326514
-#&gt; [25] 1.30577507 1.70603532 0.04200811 2.18205735 1.82712172         NA</code></pre>
+<pre><code>#&gt;  [1] 1.01181735 1.62286792 0.30183584 0.48362528 1.78402554 1.13085513
+#&gt;  [7] 1.57508218 0.65478643 3.17777029 0.56007300 1.19407508 0.90257557
+#&gt; [13] 0.59252054 1.10781445 2.47523055 0.18030672 0.05659195 0.83101216
+#&gt; [19] 0.69962236 1.89899451 1.66595079 1.35667846 1.42644458 2.09965482
+#&gt; [25] 3.11142281 0.70522148 0.12086895 0.13122092 1.60640385 1.27149114</code></pre>
 </div>
 </div>
 <p>As you can see, the vector contains missing values, these were the iterations that a negative number was simulated.</p>
@@ -781,11 +785,11 @@ Important Concept
 </div>
 <div class="sourceCode cell-code" id="cb76"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt;  [1] 0.012420305 0.139609758 0.700868209 2.638016798 1.799379739 1.300239529
-#&gt;  [7] 0.009184613 0.448941341 0.151180625 0.030248875 0.636434352 0.497887112
-#&gt; [13] 0.603893884 1.151460674 0.309681266 0.544895290 1.668815470 0.726118912
-#&gt; [19] 1.068469918 1.446190548 0.130523953 0.255233744 1.793153030 0.816355785
-#&gt; [25] 1.679714326 0.408846274 1.481924607 1.360660371 1.401159640 1.962966183</code></pre>
+<pre><code>#&gt;  [1] 0.5603081 0.1877319 0.4000447 0.9373778 2.1430376 1.0727699 1.0795590
+#&gt;  [8] 0.7911710 0.4571208 0.3365296 0.4659813 0.7590729 0.2147407 1.2902632
+#&gt; [15] 0.1750396 1.0243279 0.5179792 1.4395258 0.1833139 0.4362575 0.4903001
+#&gt; [22] 0.2625778 0.2064332 1.2284271 1.4033754 1.2431922 1.2705217 0.1728668
+#&gt; [29] 1.6632352 0.2399995</code></pre>
 </div>
 </div>
 <p>Notice that we do not use an <code>else</code> statement. This is because we do not need R to complete a task if the condition fails.</p>

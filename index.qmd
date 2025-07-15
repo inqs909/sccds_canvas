@@ -4,7 +4,7 @@ listing:
   contents: posts
   sort: "date desc"
   type: default
-  fields: [title]
+  fields: [date, title]
 ---
 
 This website contains web pages housed for Canvas use.

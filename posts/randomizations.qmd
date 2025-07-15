@@ -1,5 +1,6 @@
 ---
 title: "Randomization (Permutations) Tests"
+date: "2024-10-07"
 date-modified: "2025-01-07"
 ---
 

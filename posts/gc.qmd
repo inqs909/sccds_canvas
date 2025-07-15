@@ -1,5 +1,6 @@
 ---
 title: "Google Colab and Assignments"
+date: "2025-03-21"
 date-modified: "2025-03-21"
 ---
 

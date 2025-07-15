@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-03-23">
 
 <title>Monte Carlo Methods – SCCDS Canvas</title>
 <style>
@@ -260,11 +261,17 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 23, 2025</p>
+    </div>
+  </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">March 23, 2025</p>
+      <p class="date-modified">July 15, 2025</p>
     </div>
   </div>
     
@@ -358,7 +365,7 @@ window.Quarto = {
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] 0.2253005</code></pre>
+<pre><code>#&gt; [1] 0.4320109</code></pre>
 </div>
 </div>
 </div>
@@ -494,7 +501,7 @@ X \sim Exp(2)
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rexp</span>(<span class="dv">1</span>, <span class="at">rate =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] 1.627342</code></pre>
+<pre><code>#&gt; [1] 2.255815</code></pre>
 </div>
 </div>
 </div>
@@ -584,7 +591,7 @@ U \leq F(k)
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rpois</span>(<span class="dv">1</span>, <span class="at">lambda =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] 1</code></pre>
+<pre><code>#&gt; [1] 2</code></pre>
 </div>
 </div>
 </div>
@@ -632,7 +639,7 @@ y = \int^x_{-\infty}
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="dv">1</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] -0.07279784</code></pre>
+<pre><code>#&gt; [1] 0.8921887</code></pre>
 </div>
 </div>
 </div>
@@ -835,7 +842,7 @@ y = \int^x_{-\infty}
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rgamma</span>(<span class="dv">1</span>, <span class="at">shape =</span> <span class="fl">1.2</span>, <span class="at">rate =</span> .<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] 1.690197</code></pre>
+<pre><code>#&gt; [1] 10.40002</code></pre>
 </div>
 </div>
 </div>
@@ -863,7 +870,7 @@ y = \int^x_{-\infty}
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rbeta</span>(<span class="dv">1</span>, <span class="at">shape1 =</span> <span class="fl">1.2</span>, <span class="at">shape2 =</span> <span class="fl">6.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] 0.3808771</code></pre>
+<pre><code>#&gt; [1] 0.2202962</code></pre>
 </div>
 </div>
 </div>
@@ -917,7 +924,7 @@ y = \int^x_{-\infty}
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rbinom</span>(<span class="dv">1</span>, <span class="at">prob =</span> .<span class="dv">5</span>, <span class="at">size =</span> <span class="dv">25</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] 9</code></pre>
+<pre><code>#&gt; [1] 13</code></pre>
 </div>
 </div>
 </div>
@@ -944,7 +951,7 @@ y = \int^x_{-\infty}
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rnbinom</span>(<span class="dv">1</span>, <span class="at">prob =</span> .<span class="dv">6</span>, <span class="at">size =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] 0</code></pre>
+<pre><code>#&gt; [1] 7</code></pre>
 </div>
 </div>
 </div>
@@ -1085,11 +1092,11 @@ X \sim N(\mu, \sigma^2)
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100000</span>, <span class="at">mean =</span> <span class="sc">-</span><span class="dv">2</span>, <span class="at">sd =</span> <span class="dv">3</span>)</span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] -2.003268</code></pre>
+<pre><code>#&gt; [1] -1.995297</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">var</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] 9.020397</code></pre>
+<pre><code>#&gt; [1] 8.965873</code></pre>
 </div>
 </div>
 </section>
@@ -1198,7 +1205,7 @@ E\{I(a&lt;X&lt;b)\} &amp;  = \int_X I(a&lt;X&lt;b) f(x) dx\\
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>((x <span class="sc">&gt;</span> <span class="dv">3</span> <span class="sc">&amp;</span> x <span class="sc">&lt;</span> <span class="dv">6</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] 0.682173</code></pre>
+<pre><code>#&gt; [1] 0.68156</code></pre>
 </div>
 </div>
 </section>
@@ -1261,7 +1268,7 @@ E[\{\cos(50x) - sin(20x)\}^2] =\int^1_{0} \{\cos(50x) - sin(20x)\}^2dx
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>((<span class="fu">cos</span>(<span class="dv">50</span><span class="sc">*</span>x)<span class="sc">-</span><span class="fu">sin</span>(<span class="dv">50</span><span class="sc">*</span>x))<span class="sc">^</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] 0.9985717</code></pre>
+<pre><code>#&gt; [1] 0.9981857</code></pre>
 </div>
 </div>
 </section>
@@ -1310,7 +1317,7 @@ E[\{\cos(50x) - sin(20x)\}^2] = \\
 <span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">ff</span>(x)) <span class="sc">*</span> <span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] 4.991595</code></pre>
+<pre><code>#&gt; [1] 4.994385</code></pre>
 </div>
 </div>
 </section>
@@ -1360,7 +1367,7 @@ E[\{\cos(50x) - sin(20x)\}^2] = \\
 <span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">f2</span>(x))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>#&gt; [1] 2.508634</code></pre>
+<pre><code>#&gt; [1] 2.505526</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">2</span><span class="sc">*</span>pi)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">

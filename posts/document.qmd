@@ -8,12 +8,13 @@ knitr:
     tbl-cap-location: bottom
     R.options:
       digits: 3
-bibliography: document.bib      
-date-modified: "2025-03-21"
+bibliography: document.bib
+date: "2025-03-21"      
+date-modified: "2025-07-15"
 ---
 
 
-*Modifiend from [Statistical Computing](https://www.inqs.info/stat_comp/)*
+*Modified from [Statistical Computing](https://www.inqs.info/stat_comp/)*
 
 
 ## Introduction

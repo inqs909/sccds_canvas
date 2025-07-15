@@ -1,5 +1,6 @@
 ---
 title: "Statistical Estimators"
+date: "2024-10-11"
 date-modified: "2025-07-14"
 format: live-html
 engine: knitr
