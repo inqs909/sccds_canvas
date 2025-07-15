@@ -1,5 +1,10 @@
 ---
 title: "SCCDS Canvas Pages"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  fields: [title]
 ---
 
 This website contains web pages housed for Canvas use.

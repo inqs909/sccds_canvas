@@ -49,5 +49,50 @@
   },
   "presentations.qmd": {
     "presentations.html": "6e994da2"
+  },
+  "posts/mc.qmd": {
+    "mc.html": "b7231d09"
+  },
+  "posts/positron.qmd": {
+    "positron.html": "cba3293f"
+  },
+  "posts/presentations.qmd": {
+    "presentations.html": "f786e077"
+  },
+  "posts/r_adv.qmd": {
+    "r_adv.html": "a844c320"
+  },
+  "posts/randomizations.qmd": {
+    "randomizations.html": "de7637a0"
+  },
+  "posts/r_basics.qmd": {
+    "r_basics.html": "53264940"
+  },
+  "posts/r_data_manip.qmd": {
+    "r_data_manip.html": "af79e862"
+  },
+  "posts/r_plot.qmd": {
+    "r_plot.html": "db5cfa99"
+  },
+  "posts/r_stats.qmd": {
+    "r_stats.html": "8a204319"
+  },
+  "posts/rstudio.qmd": {
+    "rstudio.html": "5fb92d71"
+  },
+  "posts/vc_basics.qmd": {
+    "vc_basics.html": "b87ff5b3"
+  },
+  "posts/document.qmd": {
+    "document.html": "c67da9f4"
+  },
+  "posts/estimators.qmd": {
+    "estimators.html": "f64aedc1"
+  },
+  "posts/gc.qmd": {
+    "gc.html": "b49ddd07"
+  },
+  "posts/bootstrapping.qmd": {
+    "bootstrapping.html": "ca294d5f"
   }
 }

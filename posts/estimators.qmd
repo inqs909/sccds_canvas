@@ -1,6 +1,6 @@
 ---
 title: "Statistical Estimators"
-date-modified: "2024-09-28"
+date-modified: "2025-07-14"
 format: live-html
 engine: knitr
 webr:
@@ -8,7 +8,7 @@ webr:
     - ggplot2
 ---
 
-{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}
 
 ## R Packages Used
 

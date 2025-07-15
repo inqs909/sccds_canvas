@@ -1,0 +1,22 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/mc.html",
+      "/posts/positron.html",
+      "/posts/presentations.html",
+      "/posts/r_adv.html",
+      "/posts/randomizations.html",
+      "/posts/r_basics.html",
+      "/posts/r_data_manip.html",
+      "/posts/r_plot.html",
+      "/posts/r_stats.html",
+      "/posts/rstudio.html",
+      "/posts/vc_basics.html",
+      "/posts/document.html",
+      "/posts/estimators.html",
+      "/posts/gc.html",
+      "/posts/bootstrapping.html"
+    ]
+  }
+]
