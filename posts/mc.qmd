@@ -2,7 +2,15 @@
 title: "Monte Carlo Methods"
 date: "2025-03-23"
 date-modified: "2025-07-15"
+format: live-html
+engine: knitr
+webr:
+  packages:
+    - ggplot2
 ---
+
+{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}
+
 
 ## R Setup
 
@@ -15,18 +23,6 @@ library(patchwork)
 
 theme_set(theme_bw())
 ```
-
-
-## Distributions in R
-
-Several common distributions can be utilized in R with the 4 common functions:
-
-| Letter | Functionality                                                 |
-|:-------|:--------------------------------------------------------------|
-| `d`    | returns the height of the probability density/mass function   |
-| `p`    | returns the cumulative density function value                 |
-| `q`    | returns the inverse cumulative density function (percentiles) |
-| `r`    | returns a randomly generated number                           |
 
 
 ## Random Number Generator
@@ -77,7 +73,27 @@ The `runif` function in R will generate a value the come from a uniform distribu
 runif(1, 0, 1)
 ```
 
+### Webr
+
+```{webr}
+runif(1, 0, 1)
+```
+
+
 :::
+
+
+### Distributions in R
+
+Several common distributions can be utilized in R with the 4 common functions:
+
+| Letter | Functionality                                                 |
+|:-------|:--------------------------------------------------------------|
+| `d`    | returns the height of the probability density/mass function   |
+| `p`    | returns the cumulative density function value                 |
+| `q`    | returns the inverse cumulative density function (percentiles) |
+| `r`    | returns a randomly generated number                           |
+
 
 
 ## Random Variable Generations
@@ -95,12 +111,12 @@ More complex distributions may require the use of common distributions.
 a <- -20
 b <- 4
 x <- seq(a, b, length.out = 1000)
-pnorm(x, -8, sqrt(10)) |> tibble(x = x, y = _) |> 
-ggplot(aes(x,y)) +
-geom_line() +
-theme_bw() +
-ggtitle("CDF") +
-ylab(paste0("P(X","\u2264"," x)"))
+pnorm(x, -8, sqrt(10)) |> 
+  data.frame(x = x, y = _) |> 
+  ggplot(aes(x,y)) +
+    geom_line() +
+    ggtitle("CDF") +
+    ylab(paste0("P(X","\u2264"," x)"))
 ```
 
 ### Inverse-Transformation Algorithm 
@@ -142,12 +158,12 @@ $$
 ```{r}
 xe <- seq(0, 4, length.out = 1000)
 u <- runif(100000)
-u |> tibble(x = _) |> 
-ggplot(aes(x=u, y = ..density..)) +
-geom_histogram() +
-geom_line(data = tibble(x = xe, y = dexp(xe, rate = 1/2)),
-          mapping = aes(x,y)) +
-theme_bw()
+u |> 
+  data.frame(x = _) |> 
+  ggplot(aes(x = u, y = after_stat(density))) +
+    geom_histogram() +
+    geom_line(data = data.frame(x = xe, y = dexp(xe, rate = 1/2)),
+              mapping = aes(x, y))
 ```
 
 ### Simulating an Exponential RV
@@ -155,18 +171,18 @@ theme_bw()
 ```{r}
 #| code-fold: show
 u <- runif(100000)
-x <- -2 * log(1-u)
+x <- - 2 * log(1-u)
 ```
 
 ### Simulating an Exponential RV
 
 ```{r}
-x |> tibble(x = _) |> 
-ggplot(aes(x=x, y = ..density..)) +
-geom_histogram() +
-geom_line(data = tibble(x = xe, y = dexp(xe, rate = 1/2)),
-          mapping = aes(x,y)) +
-theme_bw()
+x |> 
+  data.frame(x = _) |> 
+  ggplot(aes(x = x, y = after_stat(density))) +
+    geom_histogram() +
+    geom_line(data = data.frame(x = xe, y = dexp(xe, rate = 1/2)),
+              mapping = aes(x, y)) 
 ```
 
 
@@ -204,12 +220,12 @@ $$
 ```{r}
 xe <- 0:20
 u <- runif(100000)
-u |> tibble(x = _) |> 
-ggplot(aes(x=x, y = ..density..)) +
-geom_histogram(bins = 20) +
-geom_step(data = tibble(x = xe, y = dpois(xe, lambda = 6)),
-          mapping = aes(x,y)) +
-theme_bw()
+u |> 
+  data.frame(x = _) |> 
+  ggplot(aes(x = x, y = after_stat(density))) +
+    geom_histogram(bins = 20) +
+    geom_step(data = data.frame(x = xe, y = dpois(xe, lambda = 6)),
+              mapping = aes(x, y)) 
 ```
 
 ### Poisson Distribution
@@ -230,12 +246,12 @@ finder <- function(u){
   return(x)
 }
 xx <- sapply(u, finder)  
-xx |> tibble(x = _) |> 
-ggplot(aes(x=x, y = ..density..)) +
-geom_histogram(bins = 21) +
-geom_step(data = tibble(x = xe, y = dpois(xe, lambda = 6)),
-          mapping = aes(x,y)) +
-theme_bw()
+xx |> 
+  data.frame(x = _) |> 
+  ggplot(aes(x = x, y = after_stat(density))) +
+    geom_histogram(bins = 21) +
+    geom_step(data = data.frame(x = xe, y = dpois(xe, lambda = 6)),
+              mapping = aes(x,y))
 ```
 
 ### Exponential RV in R
@@ -336,11 +352,11 @@ Lastly, multiply $g(y)$ with a constant $c$ such that $f(y)\leq cg(y)$.
 
 ```{r}
 xe <- seq(0, 20, length.out = 1000)
-xe |> tibble(x = _) |> 
-ggplot(aes(x=x, y = dgamma(x, shape = 2.3, scale = 1.2))) + 
-geom_line() +
-ylab("Density") +
-theme_bw()
+xe |> 
+  data.frame(x = _) |> 
+  ggplot(aes(x = x, y = dgamma(x, shape = 2.3, scale = 1.2))) + 
+    geom_line() +
+    ylab("Density") 
 ```
 
 #### Gamma RV
@@ -348,58 +364,61 @@ theme_bw()
 ```{r}
 xe <- seq(0, 20, length.out = 1000)
 x <- rexp(100000)
-x |> tibble(x = _) |> 
-ggplot(aes(x=x, y = ..density..)) + 
-geom_histogram(aes(color = "Exponential")) +
-geom_line(data = tibble(x = xe, 
-                        y = dgamma(x, shape = 2.3, scale = 1.2)), 
-          aes(x,y, color = "Gamma")) +
-ylab("Density") +
-theme_bw() +
-theme(legend.position = "bottom",
-      legend.title = element_blank())
+x |> 
+  data.frame(x = _) |> 
+  ggplot(aes(x = x, y = after_stat(density))) + 
+    geom_histogram(aes(color = "Exponential")) +
+    geom_line(data = data.frame(x = xe, 
+                                y = dgamma(x, shape = 2.3, scale = 1.2)), 
+              aes(x,y, color = "Gamma")) +
+    ylab("Density") +
+    theme(legend.position = "bottom",
+          legend.title = element_blank())
 ```
 
 #### Gamma RV
 
 ```{r}
 xe <- seq(0, 20, length.out = 1000)
-xe |> tibble(x = _) |> 
-ggplot(aes(x=x, y = dgamma(x, shape = 2.3, scale = 1.2))) + 
-geom_line(aes(color = "Gamma")) +
-geom_line(data = tibble(x = xe, y = dexp(xe, 1/3)), aes(x,y, color = "Exponential")) +
-ylab("Density") +
-theme_bw() +
-theme(legend.position = "bottom",
-      legend.title = element_blank())
+xe |> 
+  data.frame(x = _) |> 
+  ggplot(aes(x = x, y = dgamma(x, shape = 2.3, scale = 1.2))) + 
+    geom_line(aes(color = "Gamma")) +
+    geom_line(data = data.frame(x = xe, y = dexp(xe, 1/3)), 
+              aes(x,y, color = "Exponential")) +
+    ylab("Density") +
+    theme(legend.position = "bottom",
+          legend.title = element_blank())
 ```
 
 #### Accept-Reject Gamma RV
 
 ```{r}
 xe <- seq(0, 20, length.out = 1000)
-xe |> tibble(x = _) |> 
-ggplot(aes(x=x, y = dgamma(x, shape = 2.3, scale = 1.2))) + 
-geom_line(aes(color = "Gamma")) +
-geom_line(data = tibble(x = xe, y = 1.5*dexp(xe, 1/3)), aes(x,y, color = "Exponential")) +
-ylab("Density") +
-theme_bw() +
-theme(legend.position = "bottom",
-      legend.title = element_blank())
+xe |> 
+  data.frame(x = _) |> 
+  ggplot(aes(x = x, y = dgamma(x, shape = 2.3, scale = 1.2))) + 
+    geom_line(aes(color = "Gamma")) +
+    geom_line(data = data.frame(x = xe, y = 1.5 * dexp(xe, 1/3)), 
+              aes(x,y, color = "Exponential")) +
+    ylab("Density") +
+    theme(legend.position = "bottom",
+          legend.title = element_blank())
 ```
 
 #### Accept-Reject Gamma RV
 
 ```{r}
 xe <- seq(0, 20, length.out = 1000)
-xe |> tibble(x = _) |> 
-ggplot(aes(x=x, y = dgamma(x, shape = 2.3, scale = 1.2))) + 
-geom_line(aes(color = "Gamma")) +
-geom_line(data = tibble(x = xe, y = 3*dexp(xe, 1/3)), aes(x,y, color = "Exponential")) +
-ylab("Density") +
-theme_bw() +
-theme(legend.position = "bottom",
-      legend.title = element_blank())
+xe |> 
+  data.frame(x = _) |> 
+  ggplot(aes(x = x, y = dgamma(x, shape = 2.3, scale = 1.2))) + 
+    geom_line(aes(color = "Gamma")) +
+    geom_line(data = data.frame(x = xe, y = 3 * dexp(xe, 1/3)), 
+              aes(x,y, color = "Exponential")) +
+    ylab("Density") +
+    theme(legend.position = "bottom",
+          legend.title = element_blank())
 ```
 
 #### Accept-Reject Gamma RV
@@ -424,16 +443,16 @@ while(n < 10000){
 #### Gamma RV
 
 ```{r}
-x |> tibble(x = _) |> 
-ggplot(aes(x=x, y = ..density..)) + 
-geom_histogram(aes(color = "Exponential")) +
-geom_line(data = tibble(x = xe, 
-                        y = dgamma(x, shape = 2.3, scale = 1.2)), 
-          aes(x,y, color = "Gamma")) +
-ylab("Density") +
-theme_bw() +
-theme(legend.position = "bottom",
-      legend.title = element_blank())
+x |> 
+  data.frame(x = _) |> 
+    ggplot(aes(x=x, y = after_stat(density))) + 
+      geom_histogram(aes(color = "Exponential")) +
+      geom_line(data = data.frame(x = xe, 
+                                  y = dgamma(x, shape = 2.3, scale = 1.2)), 
+                aes(x,y, color = "Gamma")) +
+      ylab("Density") +
+      theme(legend.position = "bottom",
+            legend.title = element_blank())
 
 ```
 
@@ -731,11 +750,11 @@ dt_two<-function(x){
             y[x< -1 | x>2] <-NA
             return(y)
         }
-x |> (\(.) tibble(x = ., y = dnorm(.)))() |> 
+x |> 
+  (\(.) data.frame(x = ., y = dnorm(.)))() |> 
   ggplot(aes(x, y)) +
     geom_line() +
-    stat_function(fun = dt_two, geom = "area", fill = "green") + 
-    theme_bw()
+    stat_function(fun = dt_two, geom = "area", fill = "green")
 ```
 
 ### Finding the Propbabilities of a Random Variable
